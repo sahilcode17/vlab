@@ -1,0 +1,35 @@
+
+.s1{
+    display: flex;
+}
+.vl {
+    border-left: 3px solid green;
+    height: 400px;
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+  .v2{
+    border-left: 3px solid green;
+    height: 400px;
+    margin-left: 5%; 
+    flex: 33.3%;
+    margin-top: 5%;
+    
+  }
+  
+  .path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 10s linear  infinite;
+          }
+  
+          @keyframes dash {
+            0% {
+              stroke-dashoffset: 1000;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+  
+  
