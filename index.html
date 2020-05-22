@@ -5,29 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulattion</title>
     <link rel="stylesheet" href="sim.css">
+    
+    <!-- <script>
+        function setColor(btn, color,ans)
+        {
+            var property = document.(btn);
+            if (ans==0)getElementById
+            {
+                property.style.backgroundColor = "#f55353"
+                        
+            }
+            else
+            {
+                property.style.backgroundColor = "#7FFF00"
+            }
+
+        }
+    </script> -->
 </head>
 <body>
+ 
+     
+<div class="s1">
+    <h1>Stop and Wait</h1>
+    <div class="array">
+        <input id="b1" type="button" value="1">
+        <button id="b2">2</button>
+        <button id="b3">3</button>
+        <button id="b4">4</button>
+        <button id="b5">5</button>
+    </div>
+    <div>
+        <input id="start" type="button" value="start">
+        
+    </div>
+
+</div>
+    
+    
+<p>
+    <button onclick="myMove()">Click Me</button> 
+</p>  
+    
+<div class="c1">
+    <div class="vl" id="v1"></div>
+    <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 width="350px" height="400px" viewBox="0 0 450 600" enable-background="new 0 0 450 600" xml:space="preserve">
+		
+		<line id="path1" class="path1" fill="none" stroke="#FFFF00" stroke-width="4" stroke-miterlimit="10" x1="479.013" y1="211.559" y2="310" x2="10.987"/>
+        <line id="path2" class="path2" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x2="475.013" y2="209.559" x1="-30.883" y1="130.987"/>
+         
+    </svg> -->
+      
+    <div id ="myAnimation"></div> 
+    <div class="v2" id="v2"></div>
+</div>
     
 
 
-
-		
-<div class="s1">
-    <h1>Stop and Wait</h1>
-    <div class="vl"></div>
-    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-			 width="350px" height="400px" viewBox="0 0 450 600" enable-background="new 0 0 450 600" xml:space="preserve">
-		
-		<line class="path1" fill="none" stroke="#FFFF00" stroke-width="4" stroke-miterlimit="10" x1="479.013" y1="211.559" y2="310" x2="10.987"/>
-        <line class="path2" fill="none" stroke="#FF0000" stroke-width="4" stroke-miterlimit="10" x2="475.013" y2="209.559" x1="-30.883" y1="130.987"/>
-         
-		</svg>
-
-    <div class="v2"></div>
-	
-</div>
     	
-		
- 
-</body>
+
+<script src="kartk.js"></script>
+<script src="panda.js"></script>
+<script src="sim.js"></script>
+
 </html>
+</body>
+

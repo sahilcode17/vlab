@@ -1,12 +1,100 @@
 
-.s1{
-    display: flex;
+@media screen and (min-width: 1224px) {
+  body {
+     width:420px;
+  }
 }
+.run{
+  visibility: visible;
+}
+
+.butc{
+background-color: green;
+}
+.array{
+  display: flex;
+  height: 20%;
+  margin-left: 10%;
+  margin-top:4%;
+}
+
+#b1 
+{
+
+  background-color: yellow;
+  color: blue;
+}
+#b1:hover {
+  background-color: lighten(yellow, 30%);
+  cursor: pointer;
+  cursor: hand;
+}
+
+#b2 
+{
+  background-color: yellow;
+  color: blue;
+}
+
+#b2:hover {
+  background-color: lighten(orange, 10%);
+  cursor: pointer;
+  cursor: hand;
+}
+
+#b3 
+{
+   background-color: yellow;
+   color: blue;
+}
+
+#b3:hover {
+  background-color: lighten(orange, 10%);
+  cursor: pointer;
+  cursor: hand;
+}
+
+#b4 
+{
+   background-color: yellow;
+   color: blue;
+}
+
+#b4:hover {
+  background-color: lighten(orange, 10%);
+  cursor: pointer;
+  cursor: hand;
+}
+
+#b5
+{
+  background-color: yellow;
+ color: blue;
+}
+
+#b5:hover {
+  background-color: lighten(orange, 10%);
+  cursor: pointer;
+  cursor: hand;
+}
+
+
+.c1{
+  display: flex;
+}
+.start{
+  margin-top: 20%;
+}
+
+
 .vl {
     border-left: 3px solid green;
     height: 400px;
-    margin-left: 30%;
+    margin-left: 190%;
     margin-top: 5%;
+    
+    
+    
   }
   .v2{
     border-left: 3px solid green;
@@ -14,6 +102,8 @@
         
     flex: 33.3%;
     margin-top: 5%;
+    margin-left: 44%;
+    
     
   }
   
@@ -23,6 +113,8 @@
             animation: dash 10s linear  ;
             animation-delay: 5s;
             animation-fill-mode: forwards;
+           
+           
           }
   
           @keyframes dash {
@@ -38,7 +130,9 @@
             stroke-dashoffset: 1000;
             animation: dash 10s linear;
             animation-fill-mode: forwards;
+            
           }
+          
   
           @keyframes dash {
             0% {
@@ -48,5 +142,14 @@
               stroke-dashoffset: 0;
             }
           }
-  
-  
+ 
+          
+
+          #myAnimation {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            background-color: red;
+            
+            
+          }
