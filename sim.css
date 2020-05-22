@@ -11,16 +11,33 @@
   .v2{
     border-left: 3px solid green;
     height: 400px;
-    margin-left: 5%; 
+        
     flex: 33.3%;
     margin-top: 5%;
     
   }
   
-  .path {
+  .path1 {
             stroke-dasharray: 1000;
             stroke-dashoffset: 1000;
-            animation: dash 10s linear  infinite;
+            animation: dash 10s linear  ;
+            animation-delay: 5s;
+            animation-fill-mode: forwards;
+          }
+  
+          @keyframes dash {
+            0% {
+              stroke-dashoffset: 1000;
+            }
+            100% {
+              stroke-dashoffset: 0;
+            }
+          }
+          .path2 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 10s linear;
+            animation-fill-mode: forwards;
           }
   
           @keyframes dash {
