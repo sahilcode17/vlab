@@ -85,10 +85,20 @@
 
 .vl {
     border-left: 3px solid green;
-    height: 400px;
+    height: 500px;
     margin-left: 194%;
-    margin-top: 5%;
     
+    
+    
+    
+  }
+  .v2{
+    border-left: 3px solid green;
+    height: 500px;
+        
+    flex: 33.3%;
+    
+     margin-left: 40%;
     
     
   }
@@ -100,16 +110,14 @@
      transform: rotate(135deg); 
 
   }
-  .v2{
-    border-left: 3px solid green;
-    height: 400px;
-        
-    flex: 33.3%;
-    margin-top: 5%;
-     margin-left: 20%;
+  .v5{
+    border-left: 3px solid rgb(245, 230, 23);
+    height: 235px;
     
-    
+     margin-top: 41%; 
+     transform: rotate(-134deg); 
   }
+ 
   
      #myAnimation {
             width: 25px;
@@ -121,3 +129,36 @@
             
             
           }
+
+          #myAnimation1 {
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            background-color: yellow;
+            border-radius: 2%;
+            border: 1%;
+            
+            
+          }
+          canvas {
+            border:1px solid #d3d3d3;
+            background-color: #f1f1f1;
+        }
+        #container {
+          width: 200px;
+          height: 400px;
+          position: relative;
+          background: yellow;
+          margin-left: 150%; 
+          border-left: green solid 9px;
+          border-right: green solid 9px;
+          
+        }
+        #animate {
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          background-color: red;
+        }
+        
+        

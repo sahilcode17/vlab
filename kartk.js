@@ -3,10 +3,34 @@ var button2 = document.querySelector('#b2');
 var button3 = document.querySelector('#b3');
 var button4 = document.querySelector('#b4');
 var button5 = document.querySelector('#b5');
-last_call_yellow();
+alert("let's start");
+// import {myMove} from 'panda';
+//last_call_yellow();
+var flag=0;
 
+function myMove1() {
+    alert("My move starting");
+    flag=1;
+    var elem = document.getElementById("myAnimation");   
+    var posx = 810;
+    var posy = 200;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (posy == 360 && posx==970) {
+        clearInterval(id);
+      } else {
+        posx++; 
+        posy++;
+        elem.style.top = posy + 'px'; 
+        elem.style.left = posx + 'px'; 
+      }
 
-var arr = [1,0,1,0,1];
+    }
+    flag=0;
+  }
+//import { myMove } from './panda.js';
+// myMove1();
+var arr = [1,1,0,0,0];
 
 function wrongclick()
 {
@@ -21,13 +45,33 @@ function alertmsg()
 
 function last_call_yellow()
 {
-    
+    alert("turning yellow");
     button1.style.backgroundColor = "yellow";
     button2.style.backgroundColor = "yellow";
     button3.style.backgroundColor = "yellow";
     button4.style.backgroundColor = "yellow";
     button5.style.backgroundColor = "yellow";
 }
+
+function overwrite()
+{
+    button1.disabled = true;
+    button2.disabled = true;
+    button3.disabled = true;
+    button4.disabled = true;
+    button5.disabled = true;
+    var millisecondsToWait = 4000;
+    setTimeout(function() {
+    button1.disabled = false;
+    button2.disabled = false;
+    button3.disabled = false;
+    button4.disabled = false;
+    button5.disabled = false;
+    last_call_yellow();
+    }, millisecondsToWait);
+    
+}
+
 
 // button1.addEventListener("click" , function(){
 
@@ -57,79 +101,123 @@ function last_call_yellow()
        
 //     }}
 
-button1.onclick = function ()
-{
-    if(!(arr[0]))
-    {
-        wrongclick();
-        button1.style.backgroundColor = "red";
-    }
+var count=0;
 
-    else
-    {
-        button1.style.backgroundColor = "green";
-    }
+// while(count<3)
+// {   count+=1;
+    // alert("WHILE LOOP");
+    if(flag==0)
+    {   
+        button1.onclick = function ()
+        {
+            if(!(arr[0]))
+            {
+                wrongclick();
+                button1.style.backgroundColor = "red";
+                flag=0;
+            }
 
-};
-button2.onclick = function ()
-{
-    if(!(arr[1]))
-    {
-        wrongclick();
-        button2.style.backgroundColor = "red";
-    }
+            else
+            {
+                button1.style.backgroundColor = "green";
+                flag=1;
+                overwrite();
+                myMove1();
+                flag=0;
+                count=count+1;
 
-    else
-    {
-        button2.style.backgroundColor = "green";
-    }
+            }
 
-};
+        };
+        button2.onclick = function ()
+        {
+            if(!(arr[1]))
+            {
+                wrongclick();
+                button2.style.backgroundColor = "red";
+                flag=0;
+            }
 
-button3.onclick = function ()
-{
-    if(!(arr[2]))
-    {
-        wrongclick();
-        button3.style.backgroundColor = "red";
-    }
+            else
+            {
+                button2.style.backgroundColor = "green";
+                flag=1;
+                overwrite();
+                myMove1();
+                flag=0
+                count=count+1;
+                
+            }
 
-    else
-    {
-        button3.style.backgroundColor = "green";
-    }
+        };
 
-};
+        button3.onclick = function ()
+        {
+            if(!(arr[2]))
+            {
+                wrongclick();
+                button3.style.backgroundColor = "red";
+                flag=0;
+            }
 
-button4.onclick = function ()
-{
-    if(!(arr[3]))
-    {
-        wrongclick();
-        button4.style.backgroundColor = "red";
-    }
+            else
+            {
+                button3.style.backgroundColor = "green";
+                flag=1;
+                overwrite();
+                myMove1();
+                window.setTimeout(backoff, 1000);
+                last_call_yellow();
+                count=count+1;
+                
+            }
 
-    else
-    {
-        button4.style.backgroundColor = "green";
-    }
+        };
 
-};
+        button4.onclick = function ()
+        {
+            if(!(arr[3]))
+            {
+                wrongclick();
+                button4.style.backgroundColor = "red";
+                flag=0;
+            }
 
-button5.onclick = function ()
-{
-    if(!(arr[4]))
-    {
-        wrongclick();
-        button5.style.backgroundColor = "red";
+            else
+            {
+                button4.style.backgroundColor = "green";
+                flag=1;
+                overwrite();
+                myMove1();
+                last_call_yellow();
+                 count=count+1;
+                
+            }
 
-    }
+        };
 
-    else
-    {
-        button5.style.backgroundColor = "green";
-    }
+        button5.onclick = function ()
+        {
+            if(!(arr[4]))
+            {
+                wrongclick();
+                button5.style.backgroundColor = "red";
+                flag=0;
+            }
 
-};
+            else
+            {
+                button5.style.backgroundColor = "green";
+                flag=1;
+                overwrite();
+                myMove1();
+                last_call_yellow();
+                count=count+1;
+                
+            }
+            
+            };
 
-   
+        };
+    
+//}

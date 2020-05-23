@@ -23,8 +23,8 @@
         }
     </script> -->
 </head>
-<body>
- 
+<body onload="startGame()";>
+    
      
 <div class="s1">
     <h1>Stop and Wait</h1>
@@ -35,21 +35,26 @@
         <button id="b4">4</button>
         <button id="b5">5</button>
     </div>
-    <div>
-        <input id="start" type="button" value="start">
-        
-    </div>
+    
 
 </div>
     
     
-<p>
-    <button onclick="myMove()">Click Me</button> 
-</p>  
+
+    <!-- <button onclick="myMove()">Click Me</button>  -->
+    <button onclick="moveright()">Click Me</button> 
+    <button onclick="moveleft()">stop Me</button> 
+    <!-- <input onclick="mymove()" id="run" type="button" value="Run"> -->
+    <p><button onclick="myMove()">run</button></p>
+    <div id ="container">
+        <div id ="animate"></div>
+        
+      </div>
     
 <div class="c1">
-    <div class="vl" id="v1"></div>
+    <!-- <div class="vl" id="v1"></div>
     <div class="v4"></div>
+    <div class="v5" ></div> -->
     <!-- <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 			 width="350px" height="400px" viewBox="0 0 450 600" enable-background="new 0 0 450 600" xml:space="preserve">
 		
@@ -58,17 +63,18 @@
          
     </svg> -->
       
-    <div id ="myAnimation"></div> 
-    <div class="v2" id="v2"></div>
+    <!-- <div id ="myAnimation"></div> 
+    <div id ="myAnimation1"></div>  -->
+    <!-- <div class="v2" id="v2"></div> -->
 </div>
     
 
 
-    	
+<script src="sahil.js"></script>    	
 
-<script src="kartk.js"></script>
-<script src="panda.js"></script>
-<script src="sim.js"></script>
+<!-- <script src="kartk.js"></script> -->
+<!-- <script src="panda.js"></script> -->
+<!-- <script src="sim.js"></script>
 
 </html>
 </body>
