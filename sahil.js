@@ -1,10 +1,10 @@
-
+var myv;
 function mymove() {
     alert("frame sent")
     myMove1()
     
-    setTimeout(myMove2,1000)
-     setTimeout(initi,2000)
+    myv=setTimeout(myMove2,1000)
+    myv= setTimeout(myMove3,2000)
 
 }
 
@@ -48,14 +48,13 @@ function myMove2() {
       }
     }
   }
-
-  function nullpos() {
+  function myMove3() {
     var elem = document.getElementById("animate");   
     var posx = 0;
     var posy = 0;
     var id = setInterval(frame, 5);
     function frame() {
-      if (posx == 150 & posy == 150) {
+      if (posx == 75 & posy == 75) {
         clearInterval(id);
       } else {
         posx++;
@@ -67,5 +66,5 @@ function myMove2() {
       }
     }
   }
+
   
-   

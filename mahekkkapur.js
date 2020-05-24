@@ -1,3 +1,40 @@
+button 1
+ arr=[0,1,0,0,0];
+
+button 2
+
+if(count==2)
+                {
+                    arr=[0,1,0,0,0];
+                }
+                else
+                {
+                    arr=[0,0,1,0,0];
+                }
+                
+button 3
+
+arr=[0,0,0,1,0];
+                
+button 4
+
+  if(count==5)
+                {
+                    arr=[0,0,0,1,0];
+                }
+                else
+                {
+                    arr=[0,0,0,0,1];
+                }
+                
+button 5
+
+arr=[0,0,0,0,0];
+
+
+mahekkkapur.js
+
+
 //case 1
 
 function mymove_k1() {
@@ -64,7 +101,7 @@ function myMove2_2() {
     var posy = 150;
     var id = setInterval(frame, 5);
     function frame() {
-      if (posx == 0 & posy == 225) {
+      if (posx == 75 & posy == 225) {
         clearInterval(id);
       } else {
         posx--;
@@ -80,9 +117,9 @@ function myMove2_2() {
 
   //case 3
   
-  function mymove_k1() {
+  function mymove_k3() {
     alert("frame sent");
-    myMove1();
+    myMove1_3();
     
 }
 
@@ -92,7 +129,7 @@ function myMove2_2() {
     var posy = 0;
     var id = setInterval(frame, 5);
     function frame() {
-      if (posx == 150 & posy == 150) {
+      if (posx == 75 & posy == 75) {
         clearInterval(id);
       } else {
         posx++;
