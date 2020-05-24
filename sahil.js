@@ -1,9 +1,11 @@
 
-function myMove() {
+function mymove() {
     alert("frame sent")
     myMove1()
     
     setTimeout(myMove2,1000)
+     setTimeout(initi,2000)
+
 }
 
 function myMove2() {
@@ -46,4 +48,24 @@ function myMove2() {
       }
     }
   }
+
+  function nullpos() {
+    var elem = document.getElementById("animate");   
+    var posx = 0;
+    var posy = 0;
+    var id = setInterval(frame, 5);
+    function frame() {
+      if (posx == 150 & posy == 150) {
+        clearInterval(id);
+      } else {
+        posx++;
+        posy++; 
+        elem.style.top = posy + "px"; 
+        elem.style.left = posx + "px"; 
+         
+        
+      }
+    }
+  }
   
+   
