@@ -183,9 +183,11 @@ function GB5_1() {
         alert(0);
     } else if (count == 4) {
         alert(0);
-    } else if ()
+    } else if (count == 5) {
 
-        if (flag == 0) {
+    }
+
+    if (flag == 0) {
         button1.onclick = function() {
             if (!(arr[0])) {
                 wrongclick();
