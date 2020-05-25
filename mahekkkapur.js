@@ -175,9 +175,17 @@ function GB5_1() {
     var count = 0;
     if (count == 0) {
         alert(0);
-    }
+    } else if (count == 1) {
+        alert(1);
+    } else if (count == 2) {
+        alert(2);
+    } else if (count == 3) {
+        alert(0);
+    } else if (count == 4) {
+        alert(0);
+    } else if ()
 
-    if (flag == 0) {
+        if (flag == 0) {
         button1.onclick = function() {
             if (!(arr[0])) {
                 wrongclick();
