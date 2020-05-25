@@ -76,3 +76,16 @@
 //   myGamePiece.speedX =0; 
 //   myGamePiece123.speedX = 1; 
 // }
+
+
+
+var button1 = document.querySelector('#b1');
+var button2 = document.querySelector('#b2');
+var button3 = document.querySelector('#b3');
+var button4 = document.querySelector('#b4');
+var button5 = document.querySelector('#b5');
+var button6 = document.querySelector('#b6');
+var button7 = document.querySelector('#b7');
+var button8 = document.querySelector('#b8');
+var button9 = document.querySelector('#b9');
+var button10 = document.querySelector('#b10');

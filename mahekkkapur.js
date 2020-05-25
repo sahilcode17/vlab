@@ -17,6 +17,92 @@ var flag = 0;
 var arr = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0];
 var count = 0;
 
+function mymove_k1() {
+    alert("frames sent");
+    myMove1_1();
+    setTimeout(myMove2_1, 1000);
+}
+
+function myMove1_1() {
+
+    var elem1 = document.getElementById("animate");
+    var elem2 = document.getElementById("animate");
+    var elem3 = document.getElementById("animate");
+    var elem4 = document.getElementById("animate");
+    var elem5 = document.getElementById("animate");
+    var posx1 = 0;
+    var posy1 = 0;
+    var posx2 = 15;
+    var posy2 = 15;
+    var posx3 = 30;
+    var posy3 = 30;
+    var posx4 = 45;
+    var posy4 = 45;
+    var posx5 = 60;
+    var posy5 = 60;
+
+    var id1 = setInterval(frame1, 2.5);
+
+    function frame1() {
+        if (posx1 == 75 & posy1 == 75) {
+            clearInterval(id1);
+        } else {
+            posx1++;
+            posy1++;
+            elem1.style.top = posy1 + "px";
+            elem1.style.left = posx1 + "px";
+        }
+    }
+
+    var id2 = setInterval(frame2, 2.5);
+
+    function frame2() {
+        if (posx2 == 90 & posy2 == 90) {
+            clearInterval(id2);
+        } else {
+            posx2++;
+            posy2++;
+            elem2.style.top = posy2 + "px";
+            elem2.style.left = posx2 + "px";
+        }
+    }
+
+    var id3 = setInterval(frame3, 2.5);
+
+    function frame1() {
+        if (posx1 == 75 & posy == 75) {
+            clearInterval(id);
+        } else {
+            posx1++;
+            posy1++;
+            elem1.style.top = posy1 + "px";
+            elem1.style.left = posx1 + "px";
+        }
+    }
+
+    var id1 = setInterval(frame1, 2.5);
+
+    function frame1() {
+        if (posx1 == 75 & posy == 75) {
+            clearInterval(id);
+        } else {
+            posx1++;
+            posy1++;
+            elem1.style.top = posy1 + "px";
+            elem1.style.left = posx1 + "px";
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
 if (flag == 0) {
     button1.onclick = function() {
         if (!(arr[0])) {
@@ -142,6 +228,10 @@ if (flag == 0) {
 
     };
 
-    if (count == )
+    if (count == 5): {
+        overwrite();
+        mymove_k1();
+    }
+    if ()
 
 };
