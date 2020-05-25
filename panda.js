@@ -89,3 +89,97 @@ var button7 = document.querySelector('#b7');
 var button8 = document.querySelector('#b8');
 var button9 = document.querySelector('#b9');
 var button10 = document.querySelector('#b10');
+
+
+
+function mymove_k1() {
+    Go_1()
+    Go_2()
+    Go_3()
+    Go_4()
+}
+
+
+function Go_1() {
+
+    var elem = document.getElementById("animate1");
+    var posx = 0;
+    var posy = 0;
+    var id = setInterval(frame, 5);
+
+    function frame() {
+        if (posx == 120 & posy == 120) {
+            clearInterval(id);
+        } else {
+            posx++;
+            posy++;
+            elem.style.top = posy + "px";
+            elem.style.left = posx + "px";
+
+
+        }
+    }
+}
+
+function Go_2() {
+
+    var elem = document.getElementById("animate2");
+    var posx = 25;
+    var posy = 25;
+    var id = setInterval(frame, 5);
+
+    function frame() {
+        if (posx == 175 & posy == 175) {
+            clearInterval(id);
+        } else {
+            posx++;
+            posy++;
+            elem.style.top = posy + "px";
+            elem.style.left = posx + "px";
+
+
+        }
+    }
+}
+
+function Go_3() {
+
+    var elem = document.getElementById("animate3");
+    var posx = 50;
+    var posy = 50;
+    var id = setInterval(frame, 5);
+
+    function frame() {
+        if (posx == 150 & posy == 150) {
+            clearInterval(id);
+        } else {
+            posx++;
+            posy++;
+            elem.style.top = posy + "px";
+            elem.style.left = posx + "px";
+
+
+        }
+    }
+}
+
+function Go_4() {
+
+    var elem = document.getElementById("animate4");
+    var posx = 75;
+    var posy = 75;
+    var id = setInterval(frame, 5);
+
+    function frame() {
+        if (posx == 225 & posy == 225) {
+            clearInterval(id);
+        } else {
+            posx++;
+            posy++;
+            elem.style.top = posy + "px";
+            elem.style.left = posx + "px";
+
+
+        }
+    }
+}
