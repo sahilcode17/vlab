@@ -108,7 +108,7 @@ function Go_1() {
     var id = setInterval(frame, 5);
 
     function frame() {
-        if (posx == 120 & posy == 120) {
+        if (posx == 150 & posy == 150) {
             clearInterval(id);
         } else {
             posx++;
@@ -124,12 +124,12 @@ function Go_1() {
 function Go_2() {
 
     var elem = document.getElementById("animate2");
-    var posx = 25;
-    var posy = 25;
+    var posx = 0;
+    var posy = 10;
     var id = setInterval(frame, 5);
 
     function frame() {
-        if (posx == 175 & posy == 175) {
+        if (posx == 150 & posy == 15) {
             clearInterval(id);
         } else {
             posx++;
@@ -145,12 +145,12 @@ function Go_2() {
 function Go_3() {
 
     var elem = document.getElementById("animate3");
-    var posx = 50;
+    var posx = 0;
     var posy = 50;
     var id = setInterval(frame, 5);
 
     function frame() {
-        if (posx == 150 & posy == 150) {
+        if (posx == 150 & posy == 200) {
             clearInterval(id);
         } else {
             posx++;
@@ -166,12 +166,12 @@ function Go_3() {
 function Go_4() {
 
     var elem = document.getElementById("animate4");
-    var posx = 75;
+    var posx = 0;
     var posy = 75;
     var id = setInterval(frame, 5);
 
     function frame() {
-        if (posx == 225 & posy == 225) {
+        if (posx == 225 & posy == 300) {
             clearInterval(id);
         } else {
             posx++;
