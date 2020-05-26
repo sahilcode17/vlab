@@ -1,6 +1,7 @@
 var x, y;
 var X, Y;
-var flag = 0
+var flag = 0;
+var count = 0;
 
 function setup() {
     createCanvas(800, 800);
@@ -68,10 +69,16 @@ function setup() {
 
 }
 
-count = 0
+
+
+function wrongclick() {
+    alert("Wrong frame selected");
+}
+
+
+count = 0;
 
 function f1() {
-
     if (!(arr[0])) {
         wrongclick();
         button1.style('background-color', 'red');
@@ -79,69 +86,157 @@ function f1() {
     } else {
         button1.style('background-color', 'green');
         count += 1;
-        arr[0] = 0;
 
     }
+};
+
+
+function f2() {
     if (!(arr[1])) {
         wrongclick();
-        button1.style('background-color', 'red');
+        button2.style('background-color', 'red');
         flag = 0;
     } else {
-        button1.style('background-color', 'green');
+        button2.style('background-color', 'green');
         count += 1;
-        arr[0] = 0;
-
 
     }
+};
+
+function f3() {
     if (!(arr[2])) {
         wrongclick();
-        button1.style('background-color', 'red');
+        button3.style('background-color', 'red');
         flag = 0;
     } else {
-        button1.style('background-color', 'green');
+        button3.style('background-color', 'green');
         count += 1;
 
     }
+};
+
+function f4() {
     if (!(arr[3])) {
         wrongclick();
-        button1.style('background-color', 'red');
+        button4.style('background-color', 'red');
         flag = 0;
     } else {
-        button1.style('background-color', 'green');
+        button4.style('background-color', 'green');
         count += 1;
 
     }
+};
+
+function f5() {
+    if (!(arr[4])) {
+        wrongclick();
+        button5.style('background-color', 'red');
+        flag = 0;
+    } else {
+        button5.style('background-color', 'green');
+        count += 1;
+
+    }
+};
+
+function f6() {
+    if (!(arr[5])) {
+        wrongclick();
+        button6.style('background-color', 'red');
+        flag = 0;
+    } else {
+        button6.style('background-color', 'green');
+        count += 1;
+
+    }
+};
+
+function f7() {
+    if (!(arr[6])) {
+        wrongclick();
+        button7.style('background-color', 'red');
+        flag = 0;
+    } else {
+        button7.style('background-color', 'green');
+        count += 1;
+
+    }
+};
+
+function f8() {
+    if (!(arr[7])) {
+        wrongclick();
+        button8.style('background-color', 'red');
+        flag = 0;
+    } else {
+        button8.style('background-color', 'green');
+        count += 1;
+
+    }
+};
+
+function f9() {
+    if (!(arr[8])) {
+        wrongclick();
+        button9.style('background-color', 'red');
+        flag = 0;
+    } else {
+        button9.style('background-color', 'green');
+        count += 1;
+
+    }
+};
+
+function f10() {
+
+    if (!(arr[9])) {
+        wrongclick();
+        button10.style('background-color', 'red');
+        flag = 0;
+    } else {
+        button10.style('background-color', 'green');
+        count += 1;
+
+    }
+};
 
 
-}
-
-function fin() {
-
-}
 
 
 
-function() {
+
+var fixx;
+var fixy;
+
+function draw() {
     background(200);
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 800);
     line(799, 0, 799, 800);
 
-    if (count == 5) {
+    if (count == 4) {
+
         if (x <= 2000) {
             stroke('red');
-            x = x + X;
-            y = y + Y;
+            x = x + X; //400  1
+            y = y + Y; //0    0.1
             if (x <= 1000) {
                 line(x, y, 400, 0);
             }
             line(x, y + 40, 400, 40);
-            line(x, y + 80, 400, 80);
             line(x, y + 120, 400, 120);
-            line(x, y + 160, 400, 160);
+            if (x == 600) {
+                fixx = x;
+                fixy = y;
 
-
+            }
+            if (x >= 600) {
+                line(fixx, fixy, 400, 80);
+            }
+            if (x < 600) {
+                line(x, y + 80, 400, 80);
+            }
         }
         if (x >= 950) {
             stroke(255, 204, 0);
@@ -150,6 +245,15 @@ function() {
                 b = b + B;
                 line(a, b, 800, 40);
             }
+            alert("select next frame");
+            arr = [0, 0, 0, 0, 1, 0, 0, 0, 0, 0];
         }
     }
+    if (count == 5) {
+        line(x, y + 40, 400, 40);
+        line(fixx, fixy, 400, 80);
+        line(x, y + 120, 400, 120);
+
+    }
+
 }
