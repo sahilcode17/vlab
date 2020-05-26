@@ -1,4 +1,4 @@
-var x, y;
+var x, y,xx;
 var X, Y;
 var flag = 0;
 
@@ -12,6 +12,38 @@ function setup() {
     b = 40;
     A = -1;
     B = 0.1;
+    x1 = 400;
+    y1 = 200;
+    a1 = 800;
+    b1 = 80;
+    x2= 400;
+    y2=240;
+    a2=800;
+    b2=120;
+    x3=400;
+    y3=80;
+    a3=800;
+    b3= 120;
+    x4=400;
+    y4=280;
+    a4=800;
+    b4=160;
+    x5=400;
+    y5=320;
+    a5=800;
+    b5=200;
+    x6=400;
+    y6=360;
+    x7=400;
+    y7=200;
+    a7=800;
+    b7=240;
+    m=0;
+
+    textSize(12);
+    //nostroke();
+    
+
     arr = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0];
     button1 = createButton('1');
     button1.style('font-size', '10px');
@@ -73,6 +105,9 @@ function wrongclick() {
 
 
 count = 0;
+c3=0;
+c4=0;
+c5=0;
 
 function f1() {
     if (!(arr[0])) {
@@ -82,6 +117,25 @@ function f1() {
     } else {
         button1.style('background-color', 'green');
         count += 1;
+        arr[0]=0;
+        m=0;
+        while(m<100){
+          m+=1;
+        }
+        if(m==100){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+          
+        }}
 
     }
 };
@@ -95,6 +149,25 @@ function f2() {
     } else {
         button2.style('background-color', 'green');
         count += 1;
+        arr[1]=0;
+        m=100;
+        while(m<200){
+          m+=1;
+        }
+        if(m==200){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+          
+        }}
 
     }
 };
@@ -107,7 +180,25 @@ function f3() {
     } else {
         button3.style('background-color', 'green');
         count += 1;
-
+        arr[2]=0;
+        m=200;
+        while(m<300){
+          m+=1;
+        }
+        if(m==300){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+      
+    }}
     }
 };
 
@@ -119,6 +210,25 @@ function f4() {
     } else {
         button4.style('background-color', 'green');
         count += 1;
+        arr[3]=0;
+        m=300;
+        while(m<400){
+          m+=1;
+        }
+        if(m==400){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+      
+    }}
 
     }
 };
@@ -131,8 +241,28 @@ function f5() {
     } else {
         button5.style('background-color', 'green');
         count += 1;
-
+        arr[4]=0;
+        
+        m=400;
+        while(m<500){
+          m+=1;
+        }
+        if(m==500){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+          
+        }}
     }
+   
 };
 
 function f6() {
@@ -143,8 +273,28 @@ function f6() {
     } else {
         button6.style('background-color', 'green');
         count += 1;
+        arr[5]=0;
+        m=500;
+        while(m<600){
+          m+=1;
+        }
+        if(m==600){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+      
+    }}
 
     }
+    
 };
 
 function f7() {
@@ -155,8 +305,28 @@ function f7() {
     } else {
         button7.style('background-color', 'green');
         count += 1;
+        arr[6]=0;
+        m=600;
+        while(m<700){
+          m+=1;
+        }
+        if(m==700){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+      
+    }}
 
     }
+    
 };
 
 function f8() {
@@ -167,8 +337,27 @@ function f8() {
     } else {
         button8.style('background-color', 'green');
         count += 1;
-
+        arr[7]=0;
+        m=700;
+        while(m<800){
+          m+=1;
+        }
+        if(m==800){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+          
+        }}
     }
+   
 };
 
 function f9() {
@@ -179,8 +368,27 @@ function f9() {
     } else {
         button9.style('background-color', 'green');
         count += 1;
-
+        arr[8]=0;
+        m=800;
+        while(m<900){
+          m+=1;
+        }
+        if(m==900){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+          
+        }}
     }
+   
 };
 
 function f10() {
@@ -192,21 +400,92 @@ function f10() {
     } else {
         button10.style('background-color', 'green');
         count += 1;
-
+        arr[9]=0;
+        m=900;
+        while(m<1000){
+          m+=1;
+        }
+        if(m==1000){
+        if((count==5) || (count==6) || (count==7) || (count==12) || (count==13) || (count==14) || (count==15) || (count==20)){
+          button1.style('background-color', 'yellow');
+          button2.style('background-color', 'yellow');
+          button3.style('background-color', 'yellow');
+          button4.style('background-color', 'yellow');
+          button5.style('background-color', 'yellow');
+          button6.style('background-color', 'yellow');
+          button7.style('background-color', 'yellow');
+          button8.style('background-color', 'yellow');
+          button9.style('background-color', 'yellow');
+          button10.style('background-color', 'yellow');
+          
+        }}
     }
+   
 };
 
 
 
+cnt1=0;
+cnt2=0;
+cnt3=0;
+cnt4=0;
+cnt5=0;
+cnt6=0;
+cnt7=0;
+cnt8=0;
+c=0
 
 function draw() {
     background(200);
+    fill(400);
+    text('1', 380, 15);
+    text('2', 380, 55);
+    text('3', 380, 95);
+    text('4', 380, 135);
+    text('5', 380, 175);
+    text('6', 380, 215);
+    text('7', 380, 255);
+    text('8', 380, 295);
+    text('9', 380, 335);
+    text('10', 380, 375);
+    
+
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 800);
     line(799, 0, 799, 800);
 
     if (count == 5) {
+      cnt1=1;}
+    if(count==6){
+      cnt2=1;
+    }
+    if(count==7){
+      cnt3=1;
+    }
+    
+    if(count==12){
+      cnt4=1;
+    }
+
+    if(count==13){
+      cnt5=1;
+    }
+   
+    if(count==14){
+      cnt6=1;
+    }
+
+    if(count==15){
+      cnt7=1;
+    }
+
+    if(count==20){
+      cnt8=1;
+    }
+
+
+    if(cnt1==1){
         if (x <= 5000) {
             stroke('red');
             x = x + X;
@@ -214,11 +493,14 @@ function draw() {
             if (x <= 1000) {
                 line(x, y, 400, 0);
             }
-            line(x, y + 40, 400, 40);
-            line(x, y + 80, 400, 80);
+            if(cnt2!=1){
+            line(x, y + 40, 400, 40);}
+            if(cnt3!=1){
+            line(x, y + 80, 400, 80);}
+            if(cnt4!=1){
             line(x, y + 120, 400, 120);
             line(x, y + 160, 400, 160);
-
+            }
 
         }
         if (x >= 950) {
@@ -228,36 +510,187 @@ function draw() {
                 b = b + B;
                 line(a, b, 800, 40);
             }
-            alert("acknowledgent for frame 1 recieved, select the next frame to be sent");
-            arr = [0, 0, 0, 0, 0, 1, 0, 0, 0];
+            
+            if(a==400){
+              arr = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0];
+            }
+           
         }
+        
     }
 
-    if (count == 6) {
-        x1 = 400;
-        y1 = 200;
-        a1 = 800;
-        b1 = 80;
+    if (cnt2==1) {
+       
         stroke('red');
         if (x1 <= 5000) {
             x1 = x1 + X;
             y1 = y1 + Y;
+            if(cnt4!=1){
+            line(x1, y1 , 400, 200);}
         }
-        if (x1 >= 950) {
+        if (x1 <= 5000) {
             stroke(255, 204, 0);
             if (a1 >= 400) {
-                a1 = a + A;
-                b1 = b + B;
-                line(a, b, 800, 80);
+                a1 = a1 + A;
+                b1 = b1 + B;
+                if(cnt4!=1)
+                line(a1, b1, 800, 80);
             }
-            alert("acknowledgent for frame 1 recieved, select the next frame to be sent");
-            arr = [0, 0, 0, 0, 0, 1, 0, 0, 0];
+            arr = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
+           
 
         }
+    if(cnt3==1){
+      stroke('red');
+      if (x2 <= 5000) {
+        x2 = x2 + X;
+        y2 = y2 + Y;
+        if(cnt4!=1){
+        line(x2, y2 , 400, 240);}
+    }
+    if (x2 <= 5000) {
+        stroke(255, 204, 0);
+        if (a2 >= 600) {
+            a2 = a2 + A;
+            b2 = b2 + B;
+        }
+        if(x2<=1000){
+        line(a2, b2, 800, 120);}
+        arr=[0, 0, 1, 1, 1, 1, 1, 0, 0, 0];
+        
+      } 
+    
+    }
+  
+  if(cnt4==1){
+    if (x3 <= 5000) {
+      stroke('red');
+      x3 = x3 + X;
+      y3 = y3 + Y;
+      if(cnt8!=1){
+      if (x3 <= 1000) {
+          line(x3, y3, 400, 80);
+      }
+      if(cnt5!=1){
+      line(x3, y3 + 40, 400, 120);}
+      if(cnt6!=1){
+      line(x3, y3 + 80, 400, 160);}
+      if(x3>=600 ){
+         xx=600; yy=100;}
+      else{xx=x3; yy=y3}
+      if(cnt8!=1){
+      line(xx, yy + 120, 400, 200);
+      line(x3, y3 + 160, 400, 240);}}
+    }
 
-    };
+  }
+  if (x3 >= 950) {
+      stroke(255, 204, 0);
+      if (a3 >= 400) {
+          a3 = a3 + A;
+          b3 = b3 + B;
+          line(a3, b3, 800, 120);
+      }
+      
+      arr = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0];
+     
+  }
 
-    function popUp() {
-        alert("End");
-    };
-    0 a
+}
+
+  if(cnt5==1){
+    stroke('red');
+    if (x4 <= 5000) {
+      stroke('red');
+      if (x4 <= 5000) {
+            x4 = x4 + X;
+            y4 = y4 + Y;
+            if(cnt8!=1)
+            line(x4, y4 , 400, 280);}
+    }
+    if (x4 <= 5000) {
+            stroke(255, 204, 0);
+            if (a4 >= 400) {
+                a4 = a4 + A;
+                b4 = b4 + B;
+                if(cnt7!=1)
+                {line(a4, b4, 800, 160);}
+            }
+            arr = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0];
+           
+          }
+} 
+
+if(cnt6==1){
+  stroke('red');
+  if (x5 <= 5000) {
+    stroke('red');
+    if (x5 <= 5000) {
+          x5 = x5 + X;
+          y5 = y5 + Y;
+          if(cnt8!=1)
+          line(x5, y5 , 400, 320);}
+  }
+  if (x5 <= 5000) {
+          stroke(255, 204, 0);
+          if (a5 >= 400) {
+              a5 = a5 + A;
+              b5 = b5 + B;
+              if(cnt8!=1)
+              {line(a5, b5, 800, 200);}
+          }
+          arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
+          
+        }
+
+}
+
+if(cnt7==1){
+  stroke('red');
+  if (x6 <= 5000) {
+    stroke('red');
+    if (x6 <= 5000) {
+          x6 = x6 + X;
+          y6 = y6 + Y;
+          if(cnt8!=1)
+          line(x6, y6 , 400, 360);}
+  }
+  arr=[0,0,0,0,0,1,1,1,1,1];
+
+}
+
+if(cnt8==1){
+  if (x7 <= 1000) {
+    stroke('red');
+    x7 = x7 + X;
+    y7 = y7 + Y;
+    line(x7, y7, 400, 200);
+    line(x7,y7+40,400,240);
+    line(x7, y7 + 80, 400, 280);
+    line(x7, y7 + 120, 400, 320);
+    line(x7, y7 + 160, 400, 360);
+    
+
+}
+if (x7 >= 950) {
+    stroke(255, 204, 0);
+        a7 = a7 + A;
+        b7 = b7 + B;
+        if(a7>=400){
+        line(a7, b7, 800,240);
+       // line(a7, b7 + 40, 800, 280);
+        line(a7, b7 + 40, 800, 281);
+        line(a7, b7 + 80, 800, 320);
+        line(a7, b7 + 120, 800, 360);
+        line(a7, b7 + 160, 800, 400);}
+    }
+    
+    if(a7==400){
+      arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    }
+    
+}
+
+
+
+};
