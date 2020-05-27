@@ -1,4 +1,4 @@
-.getvar button1 = document.get('#bt1');
+var button1 = document.get('#bt1');
 var button2 = document.getElementById('#bt2');
 var button3 = document.getElementById('#bt3');
 var button4 = document.getElementById('#bt4');
