@@ -292,6 +292,20 @@ function draw() {
     text('Reciever', 740, 540);
     text('Sender', 405, 540);
 
+    text('1', 780, 55);
+    text('2', 780, 95);
+    text('3', 780, 135);
+    text('4', 780, 175);
+    text('5', 780, 215);
+    text('6', 780, 255);
+    text('7', 780, 295);
+    text('8', 780, 335);
+    text('9', 780, 375);
+    text('10', 780, 415);
+    text('Reciever', 740, 540);
+    text('Sender', 405, 540);
+
+
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 500);

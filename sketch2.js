@@ -497,7 +497,7 @@ cnt8 = 0;
 c = 0
 
 function draw() {
-    background(200);
+    background(400);
     fill(400);
     text('1', 380, 15);
     text('2', 380, 55);
@@ -509,6 +509,20 @@ function draw() {
     text('8', 380, 295);
     text('9', 380, 335);
     text('10', 380, 375);
+    text('Reciever', 740, 540);
+    text('Sender', 405, 540);
+
+
+    text('1', 780, 55);
+    text('2', 780, 95);
+    text('3', 780, 135);
+    text('4', 780, 175);
+    text('5', 780, 215);
+    text('6', 780, 255);
+    text('7', 780, 295);
+    text('8', 780, 335);
+    text('9', 780, 375);
+    text('10', 780, 415);
     text('Reciever', 740, 540);
     text('Sender', 405, 540);
 
@@ -654,8 +668,10 @@ function draw() {
                     if (x3 >= 600) {
                         xx = 600;
                         yy = 100;
-                    } else { xx = x3;
-                        yy = y3 }
+                    } else {
+                        xx = x3;
+                        yy = y3
+                    }
                     if (cnt8 != 1) {
                         line(xx, yy + 120, 400, 200);
                         line(x3, y3 + 160, 400, 240);
