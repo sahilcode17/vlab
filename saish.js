@@ -2,7 +2,7 @@ var x, y;
 var X, Y;
 var flag = 0;
 var count = 0;
-var x1, y1, a1, b1, x2, y2, aa, bb;
+var x1, y1, a1, b1, x2, y2, aa, bb, x4, y4, a4, b4, x5, y5, a5, b5;
 
 function setup() {
     createCanvas(800, 800);
@@ -22,6 +22,19 @@ function setup() {
     y2 = 200;
     aa = 0;
     bb = 0;
+    x3 = 400;
+    y3 = 80;
+    a3 = 800;
+    b3 = 120;
+    x4 = 400;
+    y4 = 240;
+    a4 = 800;
+    b4 = 280;
+    x5 = 400;
+    y5 = 240;
+    a5 = 800;
+    b5 = 280;
+
 
     arr = [1, 1, 1, 1, 0, 0, 0, 0, 0, 0];
     button1 = createButton('1');
@@ -259,14 +272,30 @@ cnt2 = 0;
 cnt3 = 0;
 cnt4 = 0;
 cnt5 = 0;
+cnt6 = 0;
+
 
 
 function draw() {
     background(400);
+    fill(400);
+    text('1', 380, 15);
+    text('2', 380, 55);
+    text('3', 380, 95);
+    text('4', 380, 135);
+    text('5', 380, 175);
+    text('6', 380, 215);
+    text('7', 380, 255);
+    text('8', 380, 295);
+    text('9', 380, 335);
+    text('10', 380, 375);
+    text('Reciever', 740, 540);
+    text('Sender', 405, 540);
+
     strokeWeight(4);
     stroke('black');
-    line(400, 0, 400, 800);
-    line(799, 0, 799, 800);
+    line(400, 0, 400, 500);
+    line(799, 0, 799, 500);
     if (count == 4) { cnt1 = 1; }
     if (count == 5) { cnt2 = 1; }
     if (count == 6) { cnt3 = 1; }
@@ -370,60 +399,63 @@ function draw() {
         cnt1 = 0;
         cnt2 = 0;
         cnt3 = 0;
-        x = 400;
-        y = 80;
-        if (x <= 5000) {
+
+        if (x3 <= 5000) {
             stroke('red');
-            x = x + X; //400  1
-            y = y + Y; //0    0.1
-
-            line(x, y, 400, 80);
-            line(x, y + 40, 400, 120);
-
-            line(x, y + 120, 400, 200);
-            line(x, y + 80, 400, 160);
+            x3 = x3 + X; //400  1
+            y3 = y3 + Y; //0    0.1
+            if (x3 <= 1005) {
+                line(x3, y3, 400, 80);
+                line(x3, y3 + 40, 400, 120);
+                line(x3, y3 + 120, 400, 200);
+                line(x3, y3 + 80, 400, 160);
+            }
         }
-        if (x >= 950) {
+        if (x3 >= 950) {
             stroke(255, 204, 0);
-            if (a >= 400) {
-                a = a + A;
-                b = b + B;
-                line(a, b, 800, 40);
-                line(a, b + 40, 800, 80);
-                line(a, b + 80, 800, 120);
-                line(a, b + 120, 800, 160);
+            if (a3 >= 400) {
+                a3 = a3 + A;
+                b3 = b3 + B;
+
+                line(a3, b3, 800, 120);
+                line(a3, b3 + 40, 800, 160);
+                line(a3, b3 + 80, 800, 200);
+                line(a3, b3 + 120, 800, 240);
             }
             // alert("select next frame");
-            if (a == 400) {
+            if (a3 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                alert1();
+                alert("select the next frames to be sent");
             }
         }
     }
     if (cnt5 == 1) {
         cnt4 = 0;
-        x = 400;
-        y = 360;
-        if (x <= 5000) {
+        // x4 = 400;
+        // y4 = 360;
+        if (x4 <= 5000) {
             stroke('red');
-            x = x + X; //400  1
-            y = y + Y; //0    0.1
+            x4 = x4 + X; //400  1
+            y4 = y4 + Y; //0    0.1
             if (cnt6 != 1) {
-                if (x <= 1000) {
-                    line(x, y, 400, 240);
+                if (x4 <= 1000) {
+                    line(x4, y4, 400, 240);
                 }
-                line(x, y + 40, 400, 280);
+                line(x4, y4 + 40, 400, 280);
 
-                line(x, y + 120, 400, 360);
-                line(x, y + 80, 400, 320);
+                line(x4, y4 + 120, 400, 360);
+                line(x4, y4 + 80, 400, 320);
             }
         }
-        if (x >= 950) {
+        if (x4 >= 950) {
             stroke(255, 204, 0);
-            if (a >= 400) {
-                a = a + A;
-                b = b + B;
-                if (a >= 600) { aa = a; } else {
+            if (a4 >= 400) {
+                a4 = a4 + A;
+                b4 = b4 + B;
+                if (a4 >= 600) {
+                    aa = a4;
+                    bb = b4;
+                } else {
                     aa = 600;
                     bb = 300;
                 }
@@ -432,13 +464,42 @@ function draw() {
                 }
             }
             // alert("select next frame");
-            if (a == 400) {
+            if (a4 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
                 alert("ack 7 lost, select the next frames")
             }
         }
     }
 
+    if (cnt6 == 1) {
+        if (x5 <= 5000) {
+            stroke('red');
+            x5 = x5 + X; //400  1
+            y5 = y5 + Y; //0    0.1
+            if (x5 <= 1005) {
+                line(x5, y5, 400, 240);
+                line(x5, y5 + 40, 400, 280);
+                line(x5, y5 + 120, 400, 360);
+                line(x5, y5 + 80, 400, 320);
+            }
+        }
+        if (x5 >= 950) {
+            stroke(255, 204, 0);
+            if (a5 >= 400) {
+                a5 = a5 + A;
+                b5 = b5 + B;
 
+                line(a5, b5, 800, 280);
+                line(a5, b5 + 40, 800, 320);
+                line(a5, b5 + 80, 800, 360);
+                line(a5, b5 + 120, 800, 400);
+            }
+            // alert("select next frame");
+            if (a5 == 400) {
+                arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                alert("10 frames sent!!!");
+            }
+        }
+    }
 
 };
