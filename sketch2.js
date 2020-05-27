@@ -1,7 +1,7 @@
 var x, y,xx;
 var X, Y;
 var flag = 0;
-
+alert0();
 function setup() {
     createCanvas(800, 816);
     x = 400;
@@ -422,7 +422,50 @@ function f10() {
     }
    
 };
+function alert00(){
+  alert("Select the correct first five frames to be sent");
+}
+function alert0(){
+  alert("Select the correct five frames to be sent");
+}
+function alert1(){
+  alert("Select the next frame to be sent");
+}
+function alert2(){
+  alert("The acknowledgement for the frame 3 is lost");
+}
+function alert3(){
+  alert("The packet 6 is lost, so no acknowledgement received");
+}
+function alert4(){
+  alert("All the 10 packets were sent !!!")}
 
+// function disbale_button(){
+//   button1.attribute('disabled', '');
+//   button2.attribute('disabled', '');
+//   button3.attribute('disabled', '');
+//   button4.attribute('disabled', '');
+//   button5.attribute('disabled', '');
+//   button6.attribute('disabled', '');
+//   button7.attribute('disabled', '');
+//   button8.attribute('disabled', '');
+//   button9.attribute('disabled', '');
+//   button10.attribute('disabled', '');
+// }
+
+// function enable_button(){
+//   button1.removeAttribute('disabled');
+//   button2.removeAttribute('disabled');
+//   button3.removeAttribute('disabled');
+//   button4.removeAttribute('disabled');
+//   button5.removeAttribute('disabled');
+//   button6.removeAttribute('disabled');
+//   button7.removeAttribute('disabled');
+//   button8.removeAttribute('disabled');
+//   button9.removeAttribute('disabled');
+//   button10.removeAttribute('disabled');
+  
+// }
 
 
 cnt1=0;
@@ -501,7 +544,6 @@ function draw() {
             line(x, y + 120, 400, 120);
             line(x, y + 160, 400, 160);
             }
-
         }
         if (x >= 950) {
             stroke(255, 204, 0);
@@ -513,6 +555,7 @@ function draw() {
             
             if(a==400){
               arr = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0];
+              alert1();
             }
            
         }
@@ -536,8 +579,10 @@ function draw() {
                 if(cnt4!=1)
                 line(a1, b1, 800, 80);
             }
+          if(a1==400){
             arr = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
-           
+            alert1();
+          }
 
         }
     if(cnt3==1){
@@ -556,7 +601,11 @@ function draw() {
         }
         if(x2<=1000){
         line(a2, b2, 800, 120);}
+      if(x2==750){
         arr=[0, 0, 1, 1, 1, 1, 1, 0, 0, 0];
+        alert2();
+        alert0();
+      }
         
       } 
     
@@ -591,9 +640,10 @@ function draw() {
           b3 = b3 + B;
           line(a3, b3, 800, 120);
       }
-      
+      if(a3==400){
       arr = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0];
-     
+        alert1();
+      }
   }
 
 }
@@ -616,9 +666,12 @@ function draw() {
                 if(cnt7!=1)
                 {line(a4, b4, 800, 160);}
             }
-            arr = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0];
+      if(a4==400){
+        arr = [0, 0, 0, 0, 0, 0, 0, 0, 1, 0];
+        alert1();
+      }
            
-          }
+    }
 } 
 
 if(cnt6==1){
@@ -639,8 +692,10 @@ if(cnt6==1){
               if(cnt8!=1)
               {line(a5, b5, 800, 200);}
           }
+    if(a5==400){
           arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 1];
-          
+          alert1();
+    }
         }
 
 }
@@ -655,8 +710,11 @@ if(cnt7==1){
           if(cnt8!=1)
           line(x6, y6 , 400, 360);}
   }
+  if(x6==900){
   arr=[0,0,0,0,0,1,1,1,1,1];
-
+    alert3();
+    alert0();
+  }
 }
 
 if(cnt8==1){
@@ -687,6 +745,7 @@ if (x7 >= 950) {
     
     if(a7==400){
       arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+      alert4();
     }
     
 }
