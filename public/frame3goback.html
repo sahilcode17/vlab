@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/p5.js"></script>
+    <script src="./js/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/sim.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 
-      <title>Simulation</title>
+    <meta charset="utf-8">
+
 </head>
 <style>
-    .parent{
-        width: 800px;
-        height: 300px;
-      padding: 3%;
-        margin: 9%;
-        margin-left: 19%;
-        text-align: center;
+    #align{
+        margin-left: 60%;
     }
-  
 </style>
 <body>
-    
-<div class="parent">
-<h1>Welcome To Flow Control Simulation</h1>
-<p> From Below Option to See Your Simulation </p>
-<a href="public/stopandwait.html"> <button type="button" class="btn btn-light">Stop and Wait ARQ </button></a>
-<a href="public/frame3goback.html"><button type="button" class="btn btn-light">GoBack-N ARQ</button></a>
-<a href="http://"><button type="button" class="btn btn-light">Selective Repeat ARQ</button></a>
+    <!-- Example single danger button -->
+<div id="align" class="btn-group">
+    <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Frame Size
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">3</a>
+      <a class="dropdown-item" href="frame4goback.html">4</a>
+      <a class="dropdown-item" href="frame5goback.html">5</a>
+      
+    </div>
+  </div>
 
+    <script src="./js/sketch3.js"></script>
 
-</div>
-
+    <!-- <script src="sketch.js"></script> -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
+
 </html>
