@@ -91,6 +91,33 @@ function setup() {
 
 }
 
+function overwrite() {
+    button1.disabled = true;
+    button2.disabled = true;
+    button3.disabled = true;
+    button4.disabled = true;
+    button5.disabled = true;
+    button6.disabled = true;
+    button7.disabled = true;
+    button8.disabled = true;
+    button9.disabled = true;
+    button10.disabled = true;
+    var millisecondsToWait = 4000;
+    setTimeout(function() {
+        button1.disabled = false;
+        button2.disabled = false;
+        button3.disabled = false;
+        button4.disabled = false;
+        button5.disabled = false;
+        button6.disabled = false;
+        button7.disabled = false;
+        button8.disabled = false;
+        button9.disabled = false;
+        button10.disabled = false;
+        yellowch();
+    }, millisecondsToWait);}
+
+
 function yellowch() {
     button1.style('background-color', 'yellow');
     button2.style('background-color', 'yellow');
@@ -122,7 +149,7 @@ function f1() {
         button1.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+           overwrite();
         }
 
     }
@@ -138,7 +165,7 @@ function f2() {
         button2.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
     }
 };
@@ -152,7 +179,7 @@ function f3() {
         button3.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
     }
 };
@@ -166,7 +193,7 @@ function f4() {
         button4.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
     }
 
@@ -181,7 +208,7 @@ function f5() {
         button5.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
     }
 
@@ -196,7 +223,7 @@ function f6() {
         button6.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
 
     }
@@ -211,7 +238,7 @@ function f7() {
         button7.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
 
     }
@@ -226,7 +253,7 @@ function f8() {
         button8.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
 
     }
@@ -241,7 +268,7 @@ function f9() {
         button9.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
 
     }
@@ -257,7 +284,7 @@ function f10() {
         button10.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-            yellowch();
+            overwrite();
         }
 
     }

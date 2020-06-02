@@ -103,6 +103,46 @@ function wrongclick() {
     alert("Wrong frame selected");
 }
 
+function overwrite() {
+    button1.disabled = true;
+    button2.disabled = true;
+    button3.disabled = true;
+    button4.disabled = true;
+    button5.disabled = true;
+    button6.disabled = true;
+    button7.disabled = true;
+    button8.disabled = true;
+    button9.disabled = true;
+    button10.disabled = true;
+    var millisecondsToWait = 4000;
+    setTimeout(function() {
+        button1.disabled = false;
+        button2.disabled = false;
+        button3.disabled = false;
+        button4.disabled = false;
+        button5.disabled = false;
+        button6.disabled = false;
+        button7.disabled = false;
+        button8.disabled = false;
+        button9.disabled = false;
+        button10.disabled = false;
+        yellowch();
+    }, millisecondsToWait);}
+
+function yellowch(){
+        button1.style('background-color', 'yellow');
+        button2.style('background-color', 'yellow');
+        button3.style('background-color', 'yellow');
+        button4.style('background-color', 'yellow');
+        button5.style('background-color', 'yellow');
+        button6.style('background-color', 'yellow');
+        button7.style('background-color', 'yellow');
+        button8.style('background-color', 'yellow');
+        button9.style('background-color', 'yellow');
+        button10.style('background-color', 'yellow');
+
+    }
+
 
 count = 0;
 c3 = 0;
@@ -118,25 +158,8 @@ function f1() {
         button1.style('background-color', 'green');
         count += 1;
         arr[0] = 0;
-        m = 0;
-        while (m < 100) {
-            m += 1;
-        }
-        if (m == 100) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+               overwrite(); }
 
     }
 };
@@ -151,25 +174,8 @@ function f2() {
         button2.style('background-color', 'green');
         count += 1;
         arr[1] = 0;
-        m = 100;
-        while (m < 200) {
-            m += 1;
-        }
-        if (m == 200) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
 
     }
 };
@@ -183,25 +189,8 @@ function f3() {
         button3.style('background-color', 'green');
         count += 1;
         arr[2] = 0;
-        m = 200;
-        while (m < 300) {
-            m += 1;
-        }
-        if (m == 300) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
     }
 };
 
@@ -214,25 +203,8 @@ function f4() {
         button4.style('background-color', 'green');
         count += 1;
         arr[3] = 0;
-        m = 300;
-        while (m < 400) {
-            m += 1;
-        }
-        if (m == 400) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
 
     }
 };
@@ -246,26 +218,8 @@ function f5() {
         button5.style('background-color', 'green');
         count += 1;
         arr[4] = 0;
-
-        m = 400;
-        while (m < 500) {
-            m += 1;
-        }
-        if (m == 500) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
     }
 
 };
@@ -279,26 +233,8 @@ function f6() {
         button6.style('background-color', 'green');
         count += 1;
         arr[5] = 0;
-        m = 500;
-        while (m < 600) {
-            m += 1;
-        }
-        if (m == 600) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
-
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
     }
 
 };
@@ -312,25 +248,8 @@ function f7() {
         button7.style('background-color', 'green');
         count += 1;
         arr[6] = 0;
-        m = 600;
-        while (m < 700) {
-            m += 1;
-        }
-        if (m == 700) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
 
     }
 
@@ -345,25 +264,8 @@ function f8() {
         button8.style('background-color', 'green');
         count += 1;
         arr[7] = 0;
-        m = 700;
-        while (m < 800) {
-            m += 1;
-        }
-        if (m == 800) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
     }
 
 };
@@ -377,25 +279,8 @@ function f9() {
         button9.style('background-color', 'green');
         count += 1;
         arr[8] = 0;
-        m = 800;
-        while (m < 900) {
-            m += 1;
-        }
-        if (m == 900) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
     }
 
 };
@@ -410,25 +295,8 @@ function f10() {
         button10.style('background-color', 'green');
         count += 1;
         arr[9] = 0;
-        m = 900;
-        while (m < 1000) {
-            m += 1;
-        }
-        if (m == 1000) {
-            if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
-                button1.style('background-color', 'yellow');
-                button2.style('background-color', 'yellow');
-                button3.style('background-color', 'yellow');
-                button4.style('background-color', 'yellow');
-                button5.style('background-color', 'yellow');
-                button6.style('background-color', 'yellow');
-                button7.style('background-color', 'yellow');
-                button8.style('background-color', 'yellow');
-                button9.style('background-color', 'yellow');
-                button10.style('background-color', 'yellow');
-
-            }
-        }
+        if ((count == 3) || (count == 4) || (count == 7) || (count == 8) || (count == 9) || (count == 12) || (count == 15)) {
+            overwrite(); }
     }
 
 };
