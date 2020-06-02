@@ -491,7 +491,12 @@ function draw() {
             x1 = x1 + X;
             y1 = y1 + Y;
             if (cnt5 != 1) {
-                line(x1, y1 + 120, 400, 120);
+                stroke('blue');
+                if(x1%2==0){
+                line(x1, y1+120+5, 400, 120);}
+                else{
+                    line(x1, y1+120-5, 400, 120);
+                }
             }
         }
         if (x1 <= 5000) {
