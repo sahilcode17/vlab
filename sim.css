@@ -237,18 +237,19 @@
 }
 
 #container {
-    width: 500px;
+    width: 220px;
+    
     height: 500px;
     position: relative;
     background: yellow;
-    margin-left: 150%;
+    margin-left: 250%;
     border-left: green solid 9px;
     border-right: green solid 9px;
 }
 
 #animate {
-    width: 500px;
-    height: 500px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     background-color: red;
 }
@@ -259,30 +260,3 @@
 
 /* gobackarq css start here */
 
-#animate1 {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-color: rgb(208, 255, 0);
-}
-
-#animate2 {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-color: rgb(47, 0, 255);
-}
-
-#animate3 {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-color: rgb(255, 0, 191);
-}
-
-#animate4 {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    background-color: red;
-}
