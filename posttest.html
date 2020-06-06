@@ -79,55 +79,54 @@
                 <h4>POST-Test</h4>
                 <ol>
                     <li>Stop and wait is which type of technique ? </li>
-                    <input type="radio" id="q1o1" name="q1" value="a"> Line discipline<br>
-                    <input type="radio" id="q1o2" name="q1" value="b"> Flow Control<br>
-                    <input type="radio" id="q1o3" name="q1" value="c">
-                    <label for="q1o1"> Error Control</label><br>
-                    <input type="radio" id="q1o4" name="q1" value="d">
-                    <label for="q1o4"> Session Management</label><br>
+                    <input type="radio" id="q11" name="q1" value="a"> Line discipline<br>
+                    <input type="radio" id="q12" name="q1" value="b"> Flow Control<br>
+                    <input type="radio" id="q13" name="q1" value="c"> Error Control<br>
+                    <input type="radio" id="q14" name="q1" value="d">Session Management<br>
+                    <p id="q1c" style="color:green; font-size:18px; font-weight:bold;"></p>
+                    <p id="q1w" style="color:red; font-size:18px; font-weight:bold;"></p>
 
                     <li>What is the main disadvantage of stop-and-wait flow control ?</li>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Unreliable</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Inefficient</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other"> Attenuation</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other"> Dropped Packets</label><br>
+                    <input type="radio" id="q21" name="q2" value="male"> Unreliable
+                    <br>
+                    <input type="radio" id="q22" name="q2" value="female"> Inefficient
+                    <br>
+                    <input type="radio" id="q23" name="q2" value="other"> Attenuation
+                    <br>
+                    <input type="radio" id="q24" name="q2" value="other"> Dropped Packets<br>
+
+                    <p id="q2c" style="color:green; font-size:18px; font-weight:bold;"></p>
+                    <p id="q2w" style="color:red; font-size:18px; font-weight:bold;"></p>
 
                     <li>Both Go-Back-N and Selective Repeat use a</li>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Sliding frame</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Sliding packet</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other"> Sliding window</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Sliding Session</label><br>
+                    <input type="radio" id="q31" name="q3" value="male"> Sliding frame<br>
+                    <input type="radio" id="q32" name="q3" value="female"> Sliding packet<br>
+                    <input type="radio" id="q33" name="q3" value="other"> Sliding window<br>
+                    <input type="radio" id="q34" name="q3" value="other"> Sliding Session<br>
+                    <p id="q3c" style="color:green; font-size:18px; font-weight:bold;"></p>
+                    <p id="q3w" style="color:red; font-size:18px; font-weight:bold;"></p>
 
                     <li>The term that refers to the set of procedures used to restrict the amount of data that the sender can send before waiting for the acknowledgement is </li>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Error control</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Byte Stuffing</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">  Delay Shift</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Flow Control
-                </label><br>
+                    <input type="radio" id="q41" name="q4" value="male"> Error control<br>
+                    <input type="radio" id="q42" name="q4" value="female"> Byte Stuffing<br>
+                    <input type="radio" id="q43" name="q4" value="other"> Delay Shift<br>
+                    <input type="radio" id="q44" name="q4" value="other"> Flow Control<br>
+                    <p id="q4c" style="color:green; font-size:18px; font-weight:bold;"></p>
+                    <p id="q4w" style="color:red; font-size:18px; font-weight:bold;"></p>
 
                     <li>A sender has a sliding window of size 15. The first 10 frames are sent. How many frames are in the window now?</li>
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male"> 5</label><br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female"> 10</label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other"> 15 </label><br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other"> 0</label><br>
+                    <input type="radio" id="q51" name="q5" value="male"> 5
+                    <br>
+                    <input type="radio" id="q52" name="q5" value="female"> 10
+                    <br>
+                    <input type="radio" id="q53" name="q5" value="other"> 15 <br>
+                    <input type="radio" id="q54" name="q5" value="other"> 0
+                    <br>
+                    <p id="q5c" style="color:green; font-size:18px; font-weight:bold;"></p>
+                    <p id="q5w" style="color:red; font-size:18px; font-weight:bold;"></p>
+                    <button id="result" onclick="result();this.disabled=true;" type="submit" class="btn btn-outline-primary">Submit</button>
                 </ol>
-                <button id="result" onclick="result()" type="button" class="btn btn-outline-primary">Submit</button>
+
 
 
             </main>
