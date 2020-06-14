@@ -388,11 +388,25 @@ function coloursq1()
     square(60, 100, 40);
     
 }
+function coloursq2()
+{
+    stroke(400);
+    fill('blue');
+    square(60, 150, 40);
+}
+
+function coloursq3()
+{
+    stroke(400);
+    fill(192, 192, 192);
+    square(60, 200, 40);
+}
+
 function coloursq4()
 {
     stroke(400);
     fill(255, 204, 0);
-    square(60, 150, 40);
+    square(60, 250, 40);
     
 }
 
@@ -428,7 +442,9 @@ function texts(){
     text('9', 780, 375);
     text('10', 780, 415);
     text('represents a normal frame sent',110,125);
-    text('represents an ACK',110,175);
+    text('represents a corrupted frame',110, 175);
+    text('represents a Negative ACK',110, 225);
+    text('represents an ACK',110,275);
     text('THE WINDOW SIZE IS',60,75);
     textSize(18);
     text('3',212,74);
@@ -448,6 +464,8 @@ function draw() {
    
     coloursq1();
     coloursq4();
+    coloursq2();
+    coloursq3();
     texts();
     textSize(12);
     // text('1', 780, 55);
