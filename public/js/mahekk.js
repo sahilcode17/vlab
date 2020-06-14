@@ -55,52 +55,52 @@ function setup() {
 
     arr = [1, 1, 1, 1, 1, 0, 0, 0, 0, 0];
     button1 = createButton('1');
-    button1.style('font-size', '17px');
+    button1.style('font-size', '10px');
     button1.style('background-color', 'yellow');
     button1.position(10, 19);
     button1.mousePressed(f1);
     button2 = createButton('2');
-    button2.style('font-size', '17px');
+    button2.style('font-size', '10px');
     button2.style('background-color', 'yellow');
     button2.position(30, 19);
     button2.mousePressed(f2);
     button3 = createButton('3');
-    button3.style('font-size', '17px');
+    button3.style('font-size', '10px');
     button3.style('background-color', 'yellow');
     button3.position(50, 19);
     button3.mousePressed(f3);
     button4 = createButton('4');
-    button4.style('font-size', '17px');
+    button4.style('font-size', '10px');
     button4.style('background-color', 'yellow');
     button4.position(70, 19);
     button4.mousePressed(f4);
     button5 = createButton('5');
-    button5.style('font-size', '17px');
+    button5.style('font-size', '10px');
     button5.style('background-color', 'yellow');
     button5.position(90, 19);
     button5.mousePressed(f5);
     button6 = createButton('6');
-    button6.style('font-size', '17px');
+    button6.style('font-size', '10px');
     button6.style('background-color', 'yellow');
     button6.position(110, 19);
     button6.mousePressed(f6);
     button7 = createButton('7');
-    button7.style('font-size', '17px');
+    button7.style('font-size', '10px');
     button7.style('background-color', 'yellow');
     button7.position(130, 19);
     button7.mousePressed(f7);
     button8 = createButton('8');
-    button8.style('font-size', '17px');
+    button8.style('font-size', '10px');
     button8.style('background-color', 'yellow');
     button8.position(150, 19);
     button8.mousePressed(f8);
     button9 = createButton('9');
-    button9.style('font-size', '17px');
+    button9.style('font-size', '10px');
     button9.style('background-color', 'yellow');
     button9.position(170, 19);
     button9.mousePressed(f9);
     button10 = createButton('10');
-    button10.style('font-size', '17px');
+    button10.style('font-size', '10px');
     button10.style('background-color', 'yellow');
     button10.position(190, 19);
     button10.mousePressed(f10);
@@ -374,20 +374,73 @@ cnt9=0;
 cnt10=0;
 c = 0
 
+function coloursq1()
+{
+    stroke(400);
+    fill('red');
+    square(60, 100, 40);
+}
+
+function coloursq2()
+{
+    stroke(400);
+    fill('blue');
+    square(60, 150, 40);
+}
+
+function coloursq3()
+{
+    stroke(400);
+    fill(192, 192, 192);
+    square(60, 200, 40);
+}
+
+function coloursq4()
+{
+    stroke(400);
+    fill(255, 204, 0);
+    square(60, 250, 40);
+    
+}
+
+function lines(){
+    strokeWeight(4);
+    stroke('black');
+    line(400, 0, 400, 640);
+    line(799, 0, 799, 640);
+}
+
+function texts(){
+    fill(0);
+    text('Reciever', 740, 640);
+    text('Sender', 405, 640);
+    text('represents a normal frame sent',110,125);
+    text('represents a corrupted frame',110, 175);
+    text('represents a Negative ACK',110, 225);
+    text('represents an ACK',110,275);
+    text('THE WINDOW SIZE IS',60,75);
+    textSize(18);
+    text('5',212,74);
+}
 
 function draw() {
-    background(500);
-    fill(400);
+    background(400);
+    strokeWeight(4);
+    stroke('black');
+    square(200, 50,35);
     
     // text('6', 380, 215);
     // text('7', 380, 255);
     // text('8', 380, 295);
     // text('9', 380, 335);
     // text('10', 380, 375);
-    text('Reciever', 740, 700);
-    text('Sender', 405, 700);
-
-
+   
+    coloursq1();
+    coloursq2();
+    coloursq3();
+    coloursq4();
+    texts();
+    textSize(12);
     // text('1', 780, 55);
     // text('2', 780, 95);
     // text('3', 780, 135);
@@ -400,11 +453,12 @@ function draw() {
     // text('10', 780, 415);
     // text('Reciever', 740, 540);
     // text('Sender', 405, 540);
-
-    strokeWeight(4);
+    
+    lines();
+    textSize(12);
     stroke('black');
-    line(400, 0, 400, 700);
-    line(799, 0, 799, 700);
+    fill(400);
+
 
     if (count == 5) {
         cnt1 = 1;
@@ -447,7 +501,6 @@ function draw() {
         text('4', 380, 135);
         text('5', 380, 175);
         text('1', 780, 55);
-     
         if (x <= 6000) {
            
             x = x + X;
@@ -668,7 +721,7 @@ function draw() {
             if (x6 <= 5000) {
                 x6 = x6 + X;
                 y6 = y6 + Y;
-                if (cnt8 != 1)
+                if (cnt9 != 1)
                     line(x6, y6, 400, 400);
             }
         }
@@ -696,12 +749,13 @@ function draw() {
         text('9', 380, 455);
         text('10', 380, 495);
         text('N8', 780, 415);
-        if (x7 <= 1000) {
+        if (x7 <= 5000) {
             stroke('red');
             x7 = x7 + X;
             y7 = y7 + Y;
+            if(cnt9!=1){
             line(x7, y7, 400, 440);
-            line(x7, y7 + 40, 400, 480);
+            line(x7, y7 + 40, 400, 480);}
          }
        
         stroke(192, 192, 192);
@@ -734,12 +788,11 @@ function draw() {
         
         if (x8 <= 5000) {
             stroke('red');
-            if (x8 <= 5000) {
-                x8 = x8 + X;
-                y8 = y8 + Y;
+            x8 = x8 + X;
+            y8 = y8 + Y;
+            if (x8 <= 1000) {
                 line(x8, y8, 400, 520);
-            
-         }}
+            }}
 
          if (x8 <=5000) {
             stroke(255, 204, 0);
@@ -752,15 +805,21 @@ function draw() {
                  
             }
 
-            if (x8 >=900 && x8<1800) {
+            if (x8 >=900) {
                 stroke(255, 204, 0);
                 if (a8_1 >= 400) {
                     a8_1 = a8_1 + A;
                     b8_1 = b8_1 + B;
+                    if (x8 <= 1800) {
+                        line(a8_1, b8_1, 800, 560);
+                    }
                 }
-                if (x8 <= 1000) {
-                    line(a8_1, b8_1, 800, 560);
-                }
+                if (a8_1 == 400) {
+                    arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                    alert("ack for all frames recieved");
+                    stroke(0);
+                    }
+                
             }
         
         
@@ -773,11 +832,7 @@ function draw() {
             //     line(a8, b8+80, 800, 520);
             //     line(a8, b8+120, 800,560);
          
-        if (x8 == 940) {
-            arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-            alert("ack for all frames recieved");
-            stroke(0);
-            }
+       
         
         }
     }

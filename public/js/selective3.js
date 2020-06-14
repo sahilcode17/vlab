@@ -381,9 +381,32 @@ cnt9 = 0;
 // cnt8 = 0;
 c = 0
 
-function draw() {
-    background(400);
-    fill(400);
+function coloursq1()
+{
+    stroke(400);
+    fill('red');
+    square(60, 100, 40);
+    
+}
+function coloursq4()
+{
+    stroke(400);
+    fill(255, 204, 0);
+    square(60, 150, 40);
+    
+}
+
+function lines(){
+    strokeWeight(4);
+    stroke('black');
+    line(400, 0, 400, 640);
+    line(799, 0, 799, 640);
+}
+
+function texts(){
+    fill(0);
+    text('Reciever', 740, 640);
+    text('Sender', 405, 640);
     text('1', 380, 15);
     text('2', 380, 55);
     text('3', 380, 95);
@@ -394,7 +417,6 @@ function draw() {
     text('8', 380, 295);
     text('9', 380, 335);
     text('10', 380, 375);
-
     text('1', 780, 55);
     text('2', 780, 95);
     text('3', 780, 135);
@@ -405,15 +427,50 @@ function draw() {
     text('8', 780, 335);
     text('9', 780, 375);
     text('10', 780, 415);
-    text('Reciever', 740, 540);
-    text('Sender', 405, 540);
+    text('represents a normal frame sent',110,125);
+    text('represents an ACK',110,175);
+    text('THE WINDOW SIZE IS',60,75);
+    textSize(18);
+    text('3',212,74);
+}
+
+function draw() {
+    background(400);
+    strokeWeight(4);
+    stroke('black');
+    square(200, 50,35);
+    
+    // text('6', 380, 215);
+    // text('7', 380, 255);
+    // text('8', 380, 295);
+    // text('9', 380, 335);
+    // text('10', 380, 375);
+   
+    coloursq1();
+    coloursq4();
+    texts();
+    textSize(12);
+    // text('1', 780, 55);
+    // text('2', 780, 95);
+    // text('3', 780, 135);
+    // text('4', 780, 175);
+    // text('5', 780, 215);
+    // text('6', 780, 255);
+    // text('7', 780, 295);
+    // text('8', 780, 335);
+    // text('9', 780, 375);
+    // text('10', 780, 415);
+    // text('Reciever', 740, 540);
+    // text('Sender', 405, 540);
+    
+    lines();
+    textSize(12);
+    stroke('black');
+    fill(400);
 
 
     strokeWeight(4);
     stroke('black');
-    line(400, 0, 400, 500);
-    line(799, 0, 799, 500);
-
     if (count == 3) {
         cnt1 = 1;
     }
