@@ -429,12 +429,19 @@ function texts(){
     strokeWeight(4);
 
 }
+function winsq()
+{
+  
+  strokeWeight(4);
+  fill(400);
+  stroke('black');
+  square(200, 50,35);
+}
 
 function draw() {
     background(400);
     strokeWeight(4);
-    stroke('black');
-    square(200, 50,35);
+    winsq();
     
     // text('6', 380, 215);
     // text('7', 380, 255);
@@ -502,6 +509,8 @@ function draw() {
 
 
     if (cnt1 == 1) {
+        stroke('white');
+        fill('black');
         text('1', 380, 15);
         text('2', 380, 55);
         text('3', 380, 95);
@@ -558,7 +567,8 @@ function draw() {
 
 
     if (cnt2 == 1) {
-        stroke('black');
+        stroke('white');
+        fill('black');
         text('6', 380, 215);
         text('N2', 780, 95);
         stroke(0,0,0);
@@ -587,7 +597,8 @@ function draw() {
         }
     }
         if (cnt3 == 1) {
-            stroke("black");
+            stroke('white');
+            fill('black');
             text('2', 380, 255);
             text('3', 780, 135);
             
@@ -619,7 +630,8 @@ function draw() {
         
 
         if (cnt4 == 1) {
-            stroke("black");
+            stroke('white');
+            fill('black');
             text('7', 380, 295);
             text('N4', 780, 175);
             stroke('red');
@@ -650,7 +662,8 @@ function draw() {
         }
 
     if (cnt5 == 1) {
-        stroke("black");
+        stroke('white');
+        fill('black');
         text('4', 380, 335);
         text('5', 780, 215);
         stroke('red');
@@ -681,7 +694,8 @@ function draw() {
     }
 
     if (cnt6 == 1) {
-        stroke("black");
+        stroke('white');
+        fill('black');
         text('8', 380, 375);
         text('6', 780, 255);
         stroke('red');
@@ -716,7 +730,8 @@ function draw() {
     }
 
     if (cnt7 == 1) {
-        stroke("black");
+        stroke('white');
+        fill('black');
         text('6', 380, 415);
         text('2', 780, 295);
         text('7', 780, 335);
@@ -752,7 +767,8 @@ function draw() {
 }
 
     if (cnt8 == 1) {
-        stroke("black");
+        stroke('white');
+        fill('black');
         text('9', 380, 455);
         text('10', 380, 495);
         text('N8', 780, 415);
@@ -784,8 +800,8 @@ function draw() {
     }
 
     if (cnt9 == 1) {
-        stroke(0);
-        stroke("black");
+        stroke('white');
+        fill('black');
         text('8', 380, 535);
         text('6', 780, 455);
         text('9', 780, 495);
