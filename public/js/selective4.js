@@ -440,8 +440,8 @@ function draw() {
             if (cnt3 != 1) {
                 line(x, y + 80, 400, 80);
             }
-
-            line(x, y + 120, 400, 120);
+            if(cnt4!=1){
+            line(x, y + 120, 400, 120);}
 
             if (cnt2 != 1) {
                 if (x >= 600) {
