@@ -354,6 +354,12 @@ function texts(){
     text('THE WINDOW SIZE IS',60,75);
     textSize(18);
     text('4',212,74);
+    textSize(25);
+    stroke(0);
+    strokeWeight(2);
+    text('GO-BACK-N ARQ',20,375);
+    stroke(400);
+    strokeWeight(4);
 }
 alert("select the first 4 frames to be sent");
 
