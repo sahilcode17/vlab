@@ -358,9 +358,9 @@ function texts(){
     stroke(0);
     strokeWeight(2);
     text('GO-BACK-N ARQ',20,375);
-    stroke(400);add
+    stroke(0);
     strokeWeight(4);
-}git 
+} 
 alert("select the first 4 frames to be sent");
 
 function draw() {
