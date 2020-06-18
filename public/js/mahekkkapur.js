@@ -324,8 +324,8 @@ function coloursq4()
 function lines(){
     strokeWeight(4);
     stroke('black');
-    line(400, 0, 400, 640);
-    line(799, 0, 799, 640);
+    line(400, 0, 400, 500);
+    line(799, 0, 799, 500);
 }
 
 function texts(){
