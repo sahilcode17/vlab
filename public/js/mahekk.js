@@ -35,8 +35,8 @@ function setup() {
     b5 = 240;
     x6 = 400;
     y6 = 400;
-    a6=800;
-    b6=280;
+    a6 = 800;
+    b6 = 280;
     x7 = 400;
     y7 = 440;
     a7 = 800;
@@ -47,7 +47,7 @@ function setup() {
     b8 = 440;
     a8_1 = 800;
     b8_1 = 560;
-   
+
 
     textSize(12);
     //nostroke();
@@ -109,10 +109,11 @@ function setup() {
 };
 
 function wrongclick() {
-    document.querySelector(".right").innerHTML="Wrong frame selected";
+    document.querySelector(".right").innerHTML = "Wrong frame selected";
 }
 
 function overwrite() {
+    document.querySelector(".right").innerHTML = "";
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
@@ -136,21 +137,22 @@ function overwrite() {
         button9.disabled = false;
         button10.disabled = false;
         yellowch();
-    }, millisecondsToWait);}
+    }, millisecondsToWait);
+}
 
-function yellowch(){
-        button1.style('background-color', 'yellow');
-        button2.style('background-color', 'yellow');
-        button3.style('background-color', 'yellow');
-        button4.style('background-color', 'yellow');
-        button5.style('background-color', 'yellow');
-        button6.style('background-color', 'yellow');
-        button7.style('background-color', 'yellow');
-        button8.style('background-color', 'yellow');
-        button9.style('background-color', 'yellow');
-        button10.style('background-color', 'yellow');
+function yellowch() {
+    button1.style('background-color', 'yellow');
+    button2.style('background-color', 'yellow');
+    button3.style('background-color', 'yellow');
+    button4.style('background-color', 'yellow');
+    button5.style('background-color', 'yellow');
+    button6.style('background-color', 'yellow');
+    button7.style('background-color', 'yellow');
+    button8.style('background-color', 'yellow');
+    button9.style('background-color', 'yellow');
+    button10.style('background-color', 'yellow');
 
-    }
+}
 
 
 
@@ -168,8 +170,9 @@ function f1() {
         button1.style('background-color', 'green');
         count += 1;
         arr[0] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
 
     }
 };
@@ -184,8 +187,9 @@ function f2() {
         button2.style('background-color', 'green');
         count += 1;
         arr[1] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }    
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 };
 
@@ -198,8 +202,9 @@ function f3() {
         button3.style('background-color', 'green');
         count += 1;
         arr[2] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 };
 
@@ -212,8 +217,9 @@ function f4() {
         button4.style('background-color', 'green');
         count += 1;
         arr[3] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 };
 
@@ -226,8 +232,9 @@ function f5() {
         button5.style('background-color', 'green');
         count += 1;
         arr[4] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 
 };
@@ -241,8 +248,9 @@ function f6() {
         button6.style('background-color', 'green');
         count += 1;
         arr[5] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
 
     }
 
@@ -257,8 +265,9 @@ function f7() {
         button7.style('background-color', 'green');
         count += 1;
         arr[6] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
 
     }
 
@@ -273,8 +282,9 @@ function f8() {
         button8.style('background-color', 'green');
         count += 1;
         arr[7] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 
 };
@@ -288,8 +298,9 @@ function f9() {
         button9.style('background-color', 'green');
         count += 1;
         arr[8] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 
 };
@@ -304,34 +315,35 @@ function f10() {
         button10.style('background-color', 'green');
         count += 1;
         arr[9] = 0;
-        if ((count == 5) || (count == 6) || (count == 7) ||(count == 8) ||(count == 9) ||(count == 10) || (count == 11) || (count == 13) || (count == 14) ) {
-            overwrite();  }  
+        if ((count == 5) || (count == 6) || (count == 7) || (count == 8) || (count == 9) || (count == 10) || (count == 11) || (count == 13) || (count == 14)) {
+            overwrite();
+        }
     }
 
 };
 
 function alert00() {
-    document.querySelector(".right").innerHTML="Select the correct first five frames to be sent";
+    document.querySelector(".right").innerHTML = "Select the correct first five frames to be sent";
 }
 
 function alert0() {
-    document.querySelector(".right").innerHTML="Select the correct five frames to be sent";
+    document.querySelector(".right").innerHTML = "Select the correct five frames to be sent";
 }
 
 function alert1() {
-    document.querySelector(".right").innerHTML="Select the next frame to be sent";
+    document.querySelector(".right").innerHTML = "Select the next frame to be sent";
 }
 
 function alert2() {
-    document.querySelector(".right").innerHTML="The acknowledgement for the frame 3 is lost";
+    document.querySelector(".right").innerHTML = "The acknowledgement for the frame 3 is lost";
 }
 
 function alert3() {
-    document.querySelector(".right").innerHTML="The packet 6 is lost, so no acknowledgement received";
+    document.querySelector(".right").innerHTML = "The packet 6 is lost, so no acknowledgement received";
 }
 
 function alert4() {
-    document.querySelector(".right").innerHTML="All the 10 packets were sent !!!";
+    document.querySelector(".right").innerHTML = "All the 10 packets were sent !!!";
 }
 
 // function disbale_button(){
@@ -370,85 +382,81 @@ cnt5 = 0;
 cnt6 = 0;
 cnt7 = 0;
 cnt8 = 0;
-cnt9=0;
-cnt10=0;
+cnt9 = 0;
+cnt10 = 0;
 c = 0
 
-function coloursq1()
-{
+function coloursq1() {
     stroke(400);
     fill('red');
     square(60, 100, 40);
 }
 
-function coloursq2()
-{
+function coloursq2() {
     stroke(400);
     fill('blue');
     square(60, 150, 40);
 }
 
-function coloursq3()
-{
+function coloursq3() {
     stroke(400);
     fill(192, 192, 192);
     square(60, 200, 40);
 }
 
-function coloursq4()
-{
+function coloursq4() {
     stroke(400);
     fill(255, 204, 0);
     square(60, 250, 40);
-    
+
 }
 
-function lines(){
+function lines() {
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 640);
     line(799, 0, 799, 640);
 }
 
-function texts(){
+function texts() {
     fill(0);
     text('Reciever', 740, 640);
     text('Sender', 405, 640);
-    text('represents a normal frame sent',110,125);
-    text('represents a corrupted frame',110, 175);
-    text('represents a Negative ACK',110, 225);
-    text('represents an ACK',110,275);
-    text('THE WINDOW SIZE IS',60,75);
+    text('represents a normal frame sent', 110, 125);
+    text('represents a corrupted frame', 110, 175);
+    text('represents a Negative ACK', 110, 225);
+    text('represents an ACK', 110, 275);
+    text('THE WINDOW SIZE IS', 60, 75);
     textSize(18);
-    text('5',212,74);
+    text('5', 212, 74);
     textSize(25);
     stroke(0);
     strokeWeight(2);
-    text('SELECTIVE-REPEAT ARQ',20,375);
+    text('SELECTIVE-REPEAT ARQ', 20, 375);
     stroke(400);
     strokeWeight(4);
 
 }
-function winsq()
-{
-  
-  strokeWeight(4);
-  fill(400);
-  stroke('black');
-  square(200, 50,35);
+
+function winsq() {
+
+    strokeWeight(4);
+    fill(400);
+    stroke('black');
+    square(200, 50, 35);
 }
 
 function draw() {
     background(400);
     strokeWeight(4);
     winsq();
-    
+
     // text('6', 380, 215);
     // text('7', 380, 255);
     // text('8', 380, 295);
     // text('9', 380, 335);
     // text('10', 380, 375);
-   
+
     coloursq1();
     coloursq2();
     coloursq3();
@@ -467,7 +475,7 @@ function draw() {
     // text('10', 780, 415);
     // text('Reciever', 740, 540);
     // text('Sender', 405, 540);
-    
+
     lines();
     textSize(12);
     stroke('black');
@@ -518,32 +526,34 @@ function draw() {
         text('5', 380, 175);
         text('1', 780, 55);
         if (x <= 6000) {
-           
+
             x = x + X;
             y = y + Y;
             if (x <= 1000) {
                 stroke('red');
-                 line(x, y, 400, 0);
+                line(x, y, 400, 0);
             }
             if (cnt2 != 1) {
                 stroke('red');
-                if(x<=600){xx=x; yy=y+40;}
-                else {xx=600; yy=60;}
+                if (x <= 600) { xx = x;
+                    yy = y + 40; } else { xx = 600;
+                    yy = 60; }
                 line(xx, yy, 400, 40);
             }
-            
+
             if (cnt3 != 1) {
                 stroke('red');
                 line(x, y + 80, 400, 80);
             }
             if (cnt4 != 1) {
                 stroke('blue');
-                if(x%2==0){xx=x;yy=y+120;}
-                else{xx=x;yy=y+120-5;}
+                if (x % 2 == 0) { xx = x;
+                    yy = y + 120; } else { xx = x;
+                    yy = y + 120 - 5; }
                 line(xx, yy, 400, 120);
             }
             stroke('red');
-            if(cnt5!=1){
+            if (cnt5 != 1) {
                 stroke('red');
                 line(x, y + 160, 400, 160);
             }
@@ -571,9 +581,9 @@ function draw() {
         fill('black');
         text('6', 380, 215);
         text('N2', 780, 95);
-        stroke(0,0,0);
+        stroke(0, 0, 0);
         if (x1 <= 5000) {
-            stroke(255,0,0);
+            stroke(255, 0, 0);
             x1 = x1 + X;
             y1 = y1 + Y;
             if (cnt6 != 1) {
@@ -590,76 +600,76 @@ function draw() {
             }
             if (a1 == 400) {
                 arr = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0];
-                document.querySelector(".right").innerHTML="negative ack for frame 2 recieved. Select the next frame to be sent";
+                document.querySelector(".right").innerHTML = "negative ack for frame 2 recieved. Select the next frame to be sent";
                 stroke(0);
             }
 
         }
     }
-        if (cnt3 == 1) {
-            stroke('white');
-            fill('black');
-            text('2', 380, 255);
-            text('3', 780, 135);
-            
-            if (x2 <= 5000) {
-                stroke('red');
-                x2 = x2 + X;
-                y2 = y2 + Y;
-                if (cnt7 != 1) {
-                    line(x2, y2, 400, 240);
-                }
-            }
-            if (x2 <= 5000) {
-                stroke(255, 204, 0);
-                if (a2 >= 400) {
-                    a2 = a2 + A;
-                    b2 = b2 + B;
-                    line(a2, b2, 800, 120);
-                }
-                
-            }
-            if (x2 == 900) {
-                    arr = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
-                    document.querySelector(".right").innerHTML="ack for frame 3 recieved select the next frame";
-                    stroke(0);
-                }
+    if (cnt3 == 1) {
+        stroke('white');
+        fill('black');
+        text('2', 380, 255);
+        text('3', 780, 135);
 
-            
-        }
-        
-
-        if (cnt4 == 1) {
-            stroke('white');
-            fill('black');
-            text('7', 380, 295);
-            text('N4', 780, 175);
+        if (x2 <= 5000) {
             stroke('red');
-            if (x3 <= 5000) {
-                x3 = x3 + X;
-                y3 = y3 + Y;
-                if (cnt7 != 1) {
-                    line(x3, y3, 400, 280);
-                }
+            x2 = x2 + X;
+            y2 = y2 + Y;
+            if (cnt7 != 1) {
+                line(x2, y2, 400, 240);
             }
-            if (x3 <= 5000) {
-                stroke(192, 192, 192);
-                if (a3 >= 400) {
-                    a3 = a3 + A;
-                    b3 = b3 + B;
-                    line(a3, b3, 800, 160);
-                }
-                
+        }
+        if (x2 <= 5000) {
+            stroke(255, 204, 0);
+            if (a2 >= 400) {
+                a2 = a2 + A;
+                b2 = b2 + B;
+                line(a2, b2, 800, 120);
             }
-            
-        if (a3 == 400) {
-                arr = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0];
-                document.querySelector(".right").innerHTML="negative ack for frame 4 recieved select the next frame";
-                stroke(0);
-            }
-        
 
         }
+        if (x2 == 900) {
+            arr = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
+            document.querySelector(".right").innerHTML = "ack for frame 3 recieved select the next frame";
+            stroke(0);
+        }
+
+
+    }
+
+
+    if (cnt4 == 1) {
+        stroke('white');
+        fill('black');
+        text('7', 380, 295);
+        text('N4', 780, 175);
+        stroke('red');
+        if (x3 <= 5000) {
+            x3 = x3 + X;
+            y3 = y3 + Y;
+            if (cnt7 != 1) {
+                line(x3, y3, 400, 280);
+            }
+        }
+        if (x3 <= 5000) {
+            stroke(192, 192, 192);
+            if (a3 >= 400) {
+                a3 = a3 + A;
+                b3 = b3 + B;
+                line(a3, b3, 800, 160);
+            }
+
+        }
+
+        if (a3 == 400) {
+            arr = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0];
+            document.querySelector(".right").innerHTML = "negative ack for frame 4 recieved select the next frame";
+            stroke(0);
+        }
+
+
+    }
 
     if (cnt5 == 1) {
         stroke('white');
@@ -681,8 +691,7 @@ function draw() {
             if (a4 >= 400) {
                 a4 = a4 + A;
                 b4 = b4 + B;
-                if (cnt6 != 1)
-                { line(a4, b4, 800, 200); }
+                if (cnt6 != 1) { line(a4, b4, 800, 200); }
             }
             if (a4 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0];
@@ -704,10 +713,12 @@ function draw() {
             if (x5 <= 5000) {
                 x5 = x5 + X;
                 y5 = y5 + Y;
-                if (cnt8 != 1){
-                    if(x5<=600){xx=x5; yy=y5;}
-                    else{xx=600; yy=380;}
-                    line(xx, yy, 400, 360);}
+                if (cnt8 != 1) {
+                    if (x5 <= 600) { xx = x5;
+                        yy = y5; } else { xx = 600;
+                        yy = 380; }
+                    line(xx, yy, 400, 360);
+                }
             }
         }
         if (x5 <= 5000) {
@@ -716,13 +727,15 @@ function draw() {
                 a5 = a5 + A;
                 b5 = b5 + B;
                 if (cnt8 != 1) {
-                    if(a5>=600){aa=a5;bb=b5;}
-                    else{aa=600; bb=260;} 
-                    line(aa, bb, 800, 240); }
+                    if (a5 >= 600) { aa = a5;
+                        bb = b5; } else { aa = 600;
+                        bb = 260; }
+                    line(aa, bb, 800, 240);
+                }
             }
             if (a5 == 400) {
                 arr = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0];
-                document.querySelector(".right").innerHTML="ack for frame 6 lost, select the next frame";
+                document.querySelector(".right").innerHTML = "ack for frame 6 lost, select the next frame";
                 stroke(0);
             }
         }
@@ -736,7 +749,7 @@ function draw() {
         text('2', 780, 295);
         text('7', 780, 335);
         text('4', 780, 375);
-        
+
         stroke('red');
         if (x6 <= 5000) {
             stroke('red');
@@ -754,17 +767,17 @@ function draw() {
                 a6 = a6 + A;
                 b6 = b6 + B;
                 line(a6, b6, 800, 280);
-                line(a6, b6+40, 800, 320);
-                line(a6, b6+80, 800, 360);
-                 
+                line(a6, b6 + 40, 800, 320);
+                line(a6, b6 + 80, 800, 360);
+
             }
-        if (x6 == 900) {
-            arr = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1];
-            document.querySelector(".right").innerHTML="ack for frame 2,7,4 receved. Select the next frames";
-           stroke(0);
+            if (x6 == 900) {
+                arr = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1];
+                document.querySelector(".right").innerHTML = "ack for frame 2,7,4 receved. Select the next frames";
+                stroke(0);
+            }
         }
     }
-}
 
     if (cnt8 == 1) {
         stroke('white');
@@ -776,24 +789,26 @@ function draw() {
             stroke('red');
             x7 = x7 + X;
             y7 = y7 + Y;
-            if(cnt9!=1){
-            line(x7, y7, 400, 440);
-            line(x7, y7 + 40, 400, 480);}
-         }
-       
+            if (cnt9 != 1) {
+                line(x7, y7, 400, 440);
+                line(x7, y7 + 40, 400, 480);
+            }
+        }
+
         stroke(192, 192, 192);
         a7 = a7 + A;
         b7 = b7 + B;
         if (a7 >= 400) {
-            if(a7>=600){aa=a7; bb=b7}
-            else{aa=600; bb=420;}
+            if (a7 >= 600) { aa = a7;
+                bb = b7 } else { aa = 600;
+                bb = 420; }
             line(aa, bb, 800, 400);
         }
-    
+
 
         if (a7 == 400) {
             arr = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0];
-            document.querySelector(".right").innerHTML="Negative ack for frame 8 lost. Select next frame to be sent";
+            document.querySelector(".right").innerHTML = "Negative ack for frame 8 lost. Select next frame to be sent";
             stroke(0);
         }
 
@@ -807,28 +822,29 @@ function draw() {
         text('9', 780, 495);
         text('10', 780, 535);
         text('8', 780, 575);
-        
-        
+
+
         if (x8 <= 5000) {
             stroke('red');
             x8 = x8 + X;
             y8 = y8 + Y;
             if (x8 <= 1000) {
                 line(x8, y8, 400, 520);
-            }}
+            }
+        }
 
-         if (x8 <=5000) {
+        if (x8 <= 5000) {
             stroke(255, 204, 0);
             if (a8 >= 400) {
                 a8 = a8 + A;
                 b8 = b8 + B;
                 line(a8, b8, 800, 440);
-                line(a8, b8+40, 800, 480);
-                line(a8, b8+80, 800, 520);
-                 
+                line(a8, b8 + 40, 800, 480);
+                line(a8, b8 + 80, 800, 520);
+
             }
 
-            if (x8 >=900) {
+            if (x8 >= 900) {
                 stroke(255, 204, 0);
                 if (a8_1 >= 400) {
                     a8_1 = a8_1 + A;
@@ -839,13 +855,13 @@ function draw() {
                 }
                 if (a8_1 == 400) {
                     arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                    document.querySelector(".right").innerHTML="ack for all frames recieved";
+                    document.querySelector(".right").innerHTML = "ack for all frames recieved";
                     stroke(0);
-                    }
-                
+                }
+
             }
-        
-        
+
+
             // stroke(255, 204, 0);
             // if (a8 >= 400) {
             //     a8 = a8 + A;
@@ -854,11 +870,9 @@ function draw() {
             //     line(a8, b8+40, 800, 480);
             //     line(a8, b8+80, 800, 520);
             //     line(a8, b8+120, 800,560);
-         
-       
-        
+
+
+
         }
     }
 };
-
-    

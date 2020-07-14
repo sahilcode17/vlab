@@ -92,8 +92,10 @@ function setup() {
 
 
 }
-document.querySelector(".right").innerHTML="select the first 4 frames to be sent";
+document.querySelector(".right").innerHTML = "select the first 4 frames to be sent";
+
 function overwrite() {
+    document.querySelector(".right").innerHTML = "";
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
@@ -136,7 +138,7 @@ function yellowch() {
 }
 
 function wrongclick() {
-    document.querySelector(".right").innerHTML="Wrong frame selected";
+    document.querySelector(".right").innerHTML = "Wrong frame selected";
 }
 
 
@@ -293,7 +295,7 @@ function f10() {
 };
 
 function alert1() {
-    document.querySelector(".right").innerHTML="Select the next frame to be sent";
+    document.querySelector(".right").innerHTML = "Select the next frame to be sent";
 }
 
 cnt1 = 0;
@@ -305,43 +307,40 @@ cnt6 = 0;
 
 
 
-function coloursq1()
-{
+function coloursq1() {
     stroke(400);
     fill('red');
     square(60, 100, 40);
-    
+
 }
-function coloursq2()
-{
+
+function coloursq2() {
     stroke(400);
     fill('blue');
     square(60, 150, 40);
 }
 
-function coloursq3()
-{
+function coloursq3() {
     stroke(400);
     fill(192, 192, 192);
     square(60, 200, 40);
 }
 
-function coloursq4()
-{
+function coloursq4() {
     stroke(400);
     fill(255, 204, 0);
     square(60, 250, 40);
-    
+
 }
 
-function lines(){
+function lines() {
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 640);
     line(799, 0, 799, 640);
 }
 
-function texts(){
+function texts() {
     fill(0);
     text('Reciever', 740, 640);
     text('Sender', 405, 640);
@@ -365,17 +364,17 @@ function texts(){
     text('8', 780, 335);
     text('9', 780, 375);
     text('10', 780, 415);
-    text('represents a normal frame sent',110,125);
-    text('represents a corrupted frame',110, 175);
-    text('represents a Negative ACK',110, 225);
-    text('represents an ACK',110,275);
-    text('THE WINDOW SIZE IS',60,75);
+    text('represents a normal frame sent', 110, 125);
+    text('represents a corrupted frame', 110, 175);
+    text('represents a Negative ACK', 110, 225);
+    text('represents an ACK', 110, 275);
+    text('THE WINDOW SIZE IS', 60, 75);
     textSize(18);
-    text('4',212,74);
+    text('4', 212, 74);
     textSize(25);
     stroke(0);
     strokeWeight(2);
-    text('SELECTIVE-REPEAT ARQ',20,375);
+    text('SELECTIVE-REPEAT ARQ', 20, 375);
     stroke(400);
     strokeWeight(4);
 }
@@ -384,14 +383,14 @@ function draw() {
     background(400);
     strokeWeight(4);
     stroke('black');
-    square(200, 50,35);
-    
+    square(200, 50, 35);
+
     // text('6', 380, 215);
     // text('7', 380, 255);
     // text('8', 380, 295);
     // text('9', 380, 335);
     // text('10', 380, 375);
-   
+
     coloursq1();
     coloursq4();
     coloursq2();
@@ -410,7 +409,7 @@ function draw() {
     // text('10', 780, 415);
     // text('Reciever', 740, 540);
     // text('Sender', 405, 540);
-    
+
     lines();
     textSize(12);
     stroke('black');
@@ -440,8 +439,9 @@ function draw() {
             if (cnt3 != 1) {
                 line(x, y + 80, 400, 80);
             }
-            if(cnt4!=1){
-            line(x, y + 120, 400, 120);}
+            if (cnt4 != 1) {
+                line(x, y + 120, 400, 120);
+            }
 
             if (cnt2 != 1) {
                 if (x >= 600) {
@@ -487,7 +487,7 @@ function draw() {
             }
             if (a1 == 400) {
                 arr = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0];
-                document.querySelector(".right").innerHTML="Negative ACK recieved select the next frame";
+                document.querySelector(".right").innerHTML = "Negative ACK recieved select the next frame";
             }
 
 
@@ -522,7 +522,7 @@ function draw() {
             }
             if (a3 == 400) {
                 arr = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0];
-                document.querySelector(".right").innerHTML="ack 3 lost, select the next frame";
+                document.querySelector(".right").innerHTML = "ack 3 lost, select the next frame";
             }
         }
 
@@ -585,7 +585,7 @@ function draw() {
 
             if (a2 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                document.querySelector(".right").innerHTML="Select the next 4 frames";
+                document.querySelector(".right").innerHTML = "Select the next 4 frames";
             }
         }
     }
@@ -614,7 +614,7 @@ function draw() {
                 // alert("select next frame");
                 if (a5 == 400) {
                     arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                    document.querySelector(".right").innerHTML="10 frames sent!!!";
+                    document.querySelector(".right").innerHTML = "10 frames sent!!!";
                 }
             }
 

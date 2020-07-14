@@ -3,7 +3,7 @@ var button2 = document.querySelector('#b2');
 var button3 = document.querySelector('#b3');
 var button4 = document.querySelector('#b4');
 var button5 = document.querySelector('#b5');
-document.querySelector(".right").innerHTML="Let's start, select the first frame that will be sent";
+document.querySelector(".right").innerHTML = "Let's start, select the first frame that will be sent";
 // import {myMove} from 'panda';
 //last_call_yellow();
 var flag = 0;
@@ -74,7 +74,7 @@ var count = 0;
 //case 1
 
 function mymove_k1() {
-    document.querySelector(".right").innerHTML="Frame Sent";
+    document.querySelector(".right").innerHTML = "Frame Sent";
     myMove1_1();
     setTimeout(myMove2_1, 1000);
 
@@ -82,7 +82,7 @@ function mymove_k1() {
 }
 
 function myMove2_1() {
-    document.querySelector(".right").innerHTML="Ack sent";
+    document.querySelector(".right").innerHTML = "Ack sent";
     var elem = document.getElementById("animate");
     var posx = 150;
     var posy = 150;
@@ -91,8 +91,8 @@ function myMove2_1() {
     function frame() {
         if (posx == 0 & posy == 300) {
             clearInterval(id);
-            document.querySelector(".right").innerHTML="The Packet is Successfully Sent And The Acknowledgement Is Received";
-            document.querySelector(".right").innerHTML="Select next frame";
+            document.querySelector(".right").innerHTML = "The Packet is Successfully Sent And The Acknowledgement Is Received";
+            document.querySelector(".right").innerHTML = "Select next frame";
         } else {
             posx--;
             posy++;
@@ -130,14 +130,14 @@ function myMove1_1() {
 //case 2
 
 function mymove_k2() {
-    document.querySelector(".right").innerHTML="frame sent";
+    document.querySelector(".right").innerHTML = "frame sent";
     myMove1_1();
 
     setTimeout(myMove2_2, 1000);
 }
 
 function myMove2_2() {
-    document.querySelector(".right").innerHTML="ack sent";
+    document.querySelector(".right").innerHTML = "ack sent";
     var elem = document.getElementById("animate");
     var posx = 150;
     var posy = 150;
@@ -146,7 +146,7 @@ function myMove2_2() {
     function frame() {
         if (posx == 75 & posy == 225) {
             clearInterval(id);
-            document.querySelector(".right").innerHTML="The Acknowledgement is lost !!! Now which frame will be sent?";
+            document.querySelector(".right").innerHTML = "The Acknowledgement is lost !!! Now which frame will be sent?";
         } else {
             posx--;
             posy++;
@@ -163,7 +163,7 @@ function myMove2_2() {
 //case 3
 
 function mymove_k3() {
-    document.querySelector(".right").innerHTML="frame sent";
+    document.querySelector(".right").innerHTML = "frame sent";
     myMove1_3();
 
 }
@@ -177,7 +177,7 @@ function myMove1_3() {
     function frame() {
         if (posx == 75 & posy == 75) {
             clearInterval(id);
-            document.querySelector(".right").innerHTML="The frame got lost, now which frame will be sent";
+            document.querySelector(".right").innerHTML = "The frame got lost, now which frame will be sent";
         } else {
             posx++;
             posy++;
@@ -194,15 +194,16 @@ function myMove1_3() {
 
 
 function wrongclick() {
-    document.querySelector(".right").innerHTML="Wrong frame selected";
+    document.querySelector(".right").innerHTML = "Wrong frame selected";
 }
 
 function alertmsg() {
-    document.querySelector(".right").innerHTML="click on the NEXT FRAMES\n that would be sent from te reciever to ";
+    document.querySelector(".right").innerHTML = "click on the NEXT FRAMES\n that would be sent from te reciever to ";
 }
 
 
 function last_call_yellow() {
+    document.querySelector(".right").innerHTML = "";
     button1.style.backgroundColor = "yellow";
     button2.style.backgroundColor = "yellow";
     button3.style.backgroundColor = "yellow";
@@ -211,6 +212,7 @@ function last_call_yellow() {
 }
 
 function overwrite() {
+    document.querySelector(".right").innerHTML = "";
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
@@ -291,14 +293,18 @@ if (flag == 0) {
             if (count == 2) {
 
                 arr = [0, 1, 0, 0, 0];
-                setTimeout(function() { button2.style.backgroundColor = "green";
-                    overwrite() }, 1000);
+                setTimeout(function() {
+                    button2.style.backgroundColor = "green";
+                    overwrite()
+                }, 1000);
                 mymove_k2();
                 last_call_yellow();
             } else {
                 arr = [0, 0, 1, 0, 0];
-                setTimeout(function() { button2.style.backgroundColor = "green";
-                    overwrite() }, 1000);
+                setTimeout(function() {
+                    button2.style.backgroundColor = "green";
+                    overwrite()
+                }, 1000);
                 mymove_k1();
                 last_call_yellow();
             }
@@ -337,14 +343,18 @@ if (flag == 0) {
             flag = 1;
             count = count + 1;
             if (count == 5) {
-                setTimeout(function() { button4.style.backgroundColor = "green";
-                    overwrite() }, 750);
+                setTimeout(function() {
+                    button4.style.backgroundColor = "green";
+                    overwrite()
+                }, 750);
                 mymove_k3();
                 last_call_yellow();
                 arr = [0, 0, 0, 1, 0];
             } else {
-                setTimeout(function() { button4.style.backgroundColor = "green";
-                    overwrite() }, 1000);
+                setTimeout(function() {
+                    button4.style.backgroundColor = "green";
+                    overwrite()
+                }, 1000);
                 mymove_k1();
                 last_call_yellow();
                 arr = [0, 0, 0, 0, 1];

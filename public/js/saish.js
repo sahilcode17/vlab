@@ -92,6 +92,7 @@ function setup() {
 }
 
 function overwrite() {
+    document.querySelector(".right").innerHTML = "";
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
@@ -115,7 +116,8 @@ function overwrite() {
         button9.disabled = false;
         button10.disabled = false;
         yellowch();
-    }, millisecondsToWait);}
+    }, millisecondsToWait);
+}
 
 
 function yellowch() {
@@ -134,7 +136,7 @@ function yellowch() {
 
 
 function wrongclick() {
-    document.querySelector(".right").innerHTML="Wrong frame selected";
+    document.querySelector(".right").innerHTML = "Wrong frame selected";
 }
 
 
@@ -149,7 +151,7 @@ function f1() {
         button1.style('background-color', 'green');
         count += 1;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
-           overwrite();
+            overwrite();
         }
 
     }
@@ -291,7 +293,7 @@ function f10() {
 };
 
 function alert1() {
-    document.querySelector(".right").innerHTML="Select the next frame to be sent";
+    document.querySelector(".right").innerHTML = "Select the next frame to be sent";
 }
 
 cnt1 = 0;
@@ -303,29 +305,28 @@ cnt6 = 0;
 
 
 
-function coloursq1()
-{
+function coloursq1() {
     stroke(400);
     fill('red');
     square(60, 100, 40);
-    
+
 }
-function coloursq4()
-{
+
+function coloursq4() {
     stroke(400);
     fill(255, 204, 0);
     square(60, 150, 40);
-    
+
 }
 
-function lines(){
+function lines() {
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 640);
     line(799, 0, 799, 640);
 }
 
-function texts(){
+function texts() {
     fill(0);
     text('Reciever', 740, 640);
     text('Sender', 405, 640);
@@ -349,32 +350,32 @@ function texts(){
     text('8', 780, 335);
     text('9', 780, 375);
     text('10', 780, 415);
-    text('represents a normal frame sent',110,125);
-    text('represents an ACK',110,175);
-    text('THE WINDOW SIZE IS',60,75);
+    text('represents a normal frame sent', 110, 125);
+    text('represents an ACK', 110, 175);
+    text('THE WINDOW SIZE IS', 60, 75);
     textSize(18);
-    text('4',212,74);
+    text('4', 212, 74);
     textSize(25);
     stroke(0);
     strokeWeight(2);
-    text('GO-BACK-N ARQ',20,375);
+    text('GO-BACK-N ARQ', 20, 375);
     stroke(0);
     strokeWeight(4);
-} 
-document.querySelector(".right").innerHTML="select the first 4 frames to be sent";
+}
+document.querySelector(".right").innerHTML = "select the first 4 frames to be sent";
 
 function draw() {
     background(400);
     strokeWeight(4);
     stroke('black');
-    square(200, 50,35);
-    
+    square(200, 50, 35);
+
     // text('6', 380, 215);
     // text('7', 380, 255);
     // text('8', 380, 295);
     // text('9', 380, 335);
     // text('10', 380, 375);
-   
+
     coloursq1();
     coloursq4();
     texts();
@@ -391,7 +392,7 @@ function draw() {
     // text('10', 780, 415);
     // text('Reciever', 740, 540);
     // text('Sender', 405, 540);
-    
+
     lines();
     textSize(12);
     stroke('black');
@@ -493,7 +494,7 @@ function draw() {
         }
         if (x2 == 800) {
             arr = [0, 0, 1, 1, 1, 1, 0, 0, 0, 0];
-            document.querySelector(".right").innerHTML="The packet 3 is lost, Select the next frames to be sent";
+            document.querySelector(".right").innerHTML = "The packet 3 is lost, Select the next frames to be sent";
 
 
         }
@@ -529,7 +530,7 @@ function draw() {
             // alert("select next frame");
             if (a3 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                document.querySelector(".right").innerHTML="select the next frames to be sent";
+                document.querySelector(".right").innerHTML = "select the next frames to be sent";
             }
         }
     }
@@ -570,7 +571,7 @@ function draw() {
             // alert("select next frame");
             if (a4 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                document.querySelector(".right").innerHTML="ack 7 lost, select the next frames";
+                document.querySelector(".right").innerHTML = "ack 7 lost, select the next frames";
             }
         }
     }
@@ -601,7 +602,7 @@ function draw() {
             // alert("select next frame");
             if (a5 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                document.querySelector(".right").innerHTML="10 frames sent!!!";
+                document.querySelector(".right").innerHTML = "10 frames sent!!!";
             }
         }
     }

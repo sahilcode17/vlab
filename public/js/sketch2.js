@@ -101,10 +101,11 @@ function setup() {
 };
 
 function wrongclick() {
-    document.querySelector(".right").innerHTML="Wrong frame selected";
+    document.querySelector(".right").innerHTML = "Wrong frame selected";
 }
 
 function overwrite() {
+    document.querySelector(".right").innerHTML = "";
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
@@ -128,21 +129,22 @@ function overwrite() {
         button9.disabled = false;
         button10.disabled = false;
         yellowch();
-    }, millisecondsToWait);}
+    }, millisecondsToWait);
+}
 
-function yellowch(){
-        button1.style('background-color', 'yellow');
-        button2.style('background-color', 'yellow');
-        button3.style('background-color', 'yellow');
-        button4.style('background-color', 'yellow');
-        button5.style('background-color', 'yellow');
-        button6.style('background-color', 'yellow');
-        button7.style('background-color', 'yellow');
-        button8.style('background-color', 'yellow');
-        button9.style('background-color', 'yellow');
-        button10.style('background-color', 'yellow');
+function yellowch() {
+    button1.style('background-color', 'yellow');
+    button2.style('background-color', 'yellow');
+    button3.style('background-color', 'yellow');
+    button4.style('background-color', 'yellow');
+    button5.style('background-color', 'yellow');
+    button6.style('background-color', 'yellow');
+    button7.style('background-color', 'yellow');
+    button8.style('background-color', 'yellow');
+    button9.style('background-color', 'yellow');
+    button10.style('background-color', 'yellow');
 
-    }
+}
 
 
 
@@ -162,7 +164,8 @@ function f1() {
         count += 1;
         arr[0] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-                     overwrite();  }
+            overwrite();
+        }
 
     }
 };
@@ -178,7 +181,8 @@ function f2() {
         count += 1;
         arr[1] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }      
+            overwrite();
+        }
     }
 };
 
@@ -192,7 +196,8 @@ function f3() {
         count += 1;
         arr[2] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }
+            overwrite();
+        }
     }
 };
 
@@ -206,7 +211,8 @@ function f4() {
         count += 1;
         arr[3] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }
+            overwrite();
+        }
     }
 };
 
@@ -220,7 +226,8 @@ function f5() {
         count += 1;
         arr[4] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }
+            overwrite();
+        }
     }
 
 };
@@ -235,7 +242,8 @@ function f6() {
         count += 1;
         arr[5] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }
+            overwrite();
+        }
 
     }
 
@@ -251,7 +259,8 @@ function f7() {
         count += 1;
         arr[6] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }  
+            overwrite();
+        }
 
     }
 
@@ -267,7 +276,8 @@ function f8() {
         count += 1;
         arr[7] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  } 
+            overwrite();
+        }
     }
 
 };
@@ -282,7 +292,8 @@ function f9() {
         count += 1;
         arr[8] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }  
+            overwrite();
+        }
     }
 
 };
@@ -298,33 +309,34 @@ function f10() {
         count += 1;
         arr[9] = 0;
         if ((count == 5) || (count == 6) || (count == 7) || (count == 12) || (count == 13) || (count == 14) || (count == 15) || (count == 20)) {
-            overwrite();  }  
+            overwrite();
+        }
     }
 
 };
 
 function alert00() {
-    document.querySelector(".right").innerHTML="Select the correct first five frames to be sent";
+    document.querySelector(".right").innerHTML = "Select the correct first five frames to be sent";
 }
 
 function alert0() {
-    document.querySelector(".right").innerHTML="Select the correct five frames to be sent";
+    document.querySelector(".right").innerHTML = "Select the correct five frames to be sent";
 }
 
 function alert1() {
-    document.querySelector(".right").innerHTML="Select the next frame to be sent";
+    document.querySelector(".right").innerHTML = "Select the next frame to be sent";
 }
 
 function alert2() {
-    document.querySelector(".right").innerHTML="The acknowledgement for the frame 3 is lost";
+    document.querySelector(".right").innerHTML = "The acknowledgement for the frame 3 is lost";
 }
 
 function alert3() {
-    document.querySelector(".right").innerHTML="The packet 6 is lost, so no acknowledgement received";
+    document.querySelector(".right").innerHTML = "The packet 6 is lost, so no acknowledgement received";
 }
 
 function alert4() {
-    document.querySelector(".right").innerHTML="All the 10 packets were sent !!!";
+    document.querySelector(".right").innerHTML = "All the 10 packets were sent !!!";
 }
 
 // function disbale_button(){
@@ -365,29 +377,28 @@ cnt7 = 0;
 cnt8 = 0;
 c = 0
 
-function coloursq1()
-{
+function coloursq1() {
     stroke(400);
     fill('red');
     square(60, 100, 40);
-    
+
 }
-function coloursq4()
-{
+
+function coloursq4() {
     stroke(400);
     fill(255, 204, 0);
     square(60, 150, 40);
-    
+
 }
 
-function lines(){
+function lines() {
     strokeWeight(4);
     stroke('black');
     line(400, 0, 400, 640);
     line(799, 0, 799, 640);
 }
 
-function texts(){
+function texts() {
     fill(0);
     text('Reciever', 740, 640);
     text('Sender', 405, 640);
@@ -411,15 +422,15 @@ function texts(){
     text('8', 780, 335);
     text('9', 780, 375);
     text('10', 780, 415);
-    text('represents a normal frame sent',110,125);
-    text('represents an ACK',110,175);
-    text('THE WINDOW SIZE IS',60,75);
+    text('represents a normal frame sent', 110, 125);
+    text('represents an ACK', 110, 175);
+    text('THE WINDOW SIZE IS', 60, 75);
     textSize(18);
-    text('5',212,74);
+    text('5', 212, 74);
     textSize(25);
     stroke(0);
     strokeWeight(2);
-    text('GO-BACK-N ARQ',20,375);
+    text('GO-BACK-N ARQ', 20, 375);
     stroke(400);
     strokeWeight(4);
 }
@@ -428,14 +439,14 @@ function draw() {
     background(400);
     strokeWeight(4);
     stroke('black');
-    square(200, 50,35);
-    
+    square(200, 50, 35);
+
     // text('6', 380, 215);
     // text('7', 380, 255);
     // text('8', 380, 295);
     // text('9', 380, 335);
     // text('10', 380, 375);
-   
+
     coloursq1();
     coloursq4();
     texts();
@@ -452,7 +463,7 @@ function draw() {
     // text('10', 780, 415);
     // text('Reciever', 740, 540);
     // text('Sender', 405, 540);
-    
+
     lines();
     textSize(12);
     stroke('black');
