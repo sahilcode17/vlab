@@ -3,8 +3,7 @@ var button2 = document.querySelector('#b2');
 var button3 = document.querySelector('#b3');
 var button4 = document.querySelector('#b4');
 var button5 = document.querySelector('#b5');
-alert("Let's start, select the first frame that will be sent");
-
+document.querySelector(".right").innerHTML="Let's start, select the first frame that will be sent";
 // import {myMove} from 'panda';
 //last_call_yellow();
 var flag = 0;
@@ -75,7 +74,7 @@ var count = 0;
 //case 1
 
 function mymove_k1() {
-    alert("frame sent");
+    document.querySelector(".right").innerHTML="Frame Sent";
     myMove1_1();
     setTimeout(myMove2_1, 1000);
 
@@ -83,7 +82,7 @@ function mymove_k1() {
 }
 
 function myMove2_1() {
-    alert("Ack Sent");
+    document.querySelector(".right").innerHTML="Ack sent";
     var elem = document.getElementById("animate");
     var posx = 150;
     var posy = 150;
@@ -92,8 +91,8 @@ function myMove2_1() {
     function frame() {
         if (posx == 0 & posy == 300) {
             clearInterval(id);
-            alert("The Packet is Successfully Sent And The Acknowledgement Is Received");
-            alert("Select next frame");
+            document.querySelector(".right").innerHTML="The Packet is Successfully Sent And The Acknowledgement Is Received";
+            document.querySelector(".right").innerHTML="Select next frame";
         } else {
             posx--;
             posy++;
@@ -131,14 +130,14 @@ function myMove1_1() {
 //case 2
 
 function mymove_k2() {
-    alert("frame sent");
+    document.querySelector(".right").innerHTML="frame sent";
     myMove1_1();
 
     setTimeout(myMove2_2, 1000);
 }
 
 function myMove2_2() {
-    alert("ack sent");
+    document.querySelector(".right").innerHTML="ack sent";
     var elem = document.getElementById("animate");
     var posx = 150;
     var posy = 150;
@@ -147,7 +146,7 @@ function myMove2_2() {
     function frame() {
         if (posx == 75 & posy == 225) {
             clearInterval(id);
-            alert("The Acknowledgement is lost !!! Now which frame will be sent?");
+            document.querySelector(".right").innerHTML="The Acknowledgement is lost !!! Now which frame will be sent?";
         } else {
             posx--;
             posy++;
@@ -164,7 +163,7 @@ function myMove2_2() {
 //case 3
 
 function mymove_k3() {
-    alert("frame sent");
+    document.querySelector(".right").innerHTML="frame sent";
     myMove1_3();
 
 }
@@ -178,7 +177,7 @@ function myMove1_3() {
     function frame() {
         if (posx == 75 & posy == 75) {
             clearInterval(id);
-            alert("The frame got lost, now which frame will be sent")
+            document.querySelector(".right").innerHTML="The frame got lost, now which frame will be sent";
         } else {
             posx++;
             posy++;
@@ -195,11 +194,11 @@ function myMove1_3() {
 
 
 function wrongclick() {
-    alert("Wrong frame selected");
+    document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 function alertmsg() {
-    alert("click on the NEXT FRAMES\n that would be sent from te reciever to ");
+    document.querySelector(".right").innerHTML="click on the NEXT FRAMES\n that would be sent from te reciever to ";
 }
 
 

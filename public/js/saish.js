@@ -134,7 +134,7 @@ function yellowch() {
 
 
 function wrongclick() {
-    alert("Wrong frame selected");
+    document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 
@@ -291,7 +291,7 @@ function f10() {
 };
 
 function alert1() {
-    alert("Select the next frame to be sent");
+    document.querySelector(".right").innerHTML="Select the next frame to be sent";
 }
 
 cnt1 = 0;
@@ -361,7 +361,7 @@ function texts(){
     stroke(0);
     strokeWeight(4);
 } 
-alert("select the first 4 frames to be sent");
+document.querySelector(".right").innerHTML="select the first 4 frames to be sent";
 
 function draw() {
     background(400);
@@ -493,7 +493,7 @@ function draw() {
         }
         if (x2 == 800) {
             arr = [0, 0, 1, 1, 1, 1, 0, 0, 0, 0];
-            alert("The packet 3 is lost, Select the next frames to be sent");
+            document.querySelector(".right").innerHTML="The packet 3 is lost, Select the next frames to be sent";
 
 
         }
@@ -529,7 +529,7 @@ function draw() {
             // alert("select next frame");
             if (a3 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                alert("select the next frames to be sent");
+                document.querySelector(".right").innerHTML="select the next frames to be sent";
             }
         }
     }
@@ -570,7 +570,7 @@ function draw() {
             // alert("select next frame");
             if (a4 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                alert("ack 7 lost, select the next frames")
+                document.querySelector(".right").innerHTML="ack 7 lost, select the next frames";
             }
         }
     }
@@ -601,7 +601,7 @@ function draw() {
             // alert("select next frame");
             if (a5 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                alert("10 frames sent!!!");
+                document.querySelector(".right").innerHTML="10 frames sent!!!";
             }
         }
     }

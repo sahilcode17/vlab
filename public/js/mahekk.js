@@ -109,7 +109,7 @@ function setup() {
 };
 
 function wrongclick() {
-    alert("Wrong frame selected");
+    document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 function overwrite() {
@@ -311,27 +311,27 @@ function f10() {
 };
 
 function alert00() {
-    alert("Select the correct first five frames to be sent");
+    document.querySelector(".right").innerHTML="Select the correct first five frames to be sent";
 }
 
 function alert0() {
-    alert("Select the correct five frames to be sent");
+    document.querySelector(".right").innerHTML="Select the correct five frames to be sent";
 }
 
 function alert1() {
-    alert("Select the next frame to be sent");
+    document.querySelector(".right").innerHTML="Select the next frame to be sent";
 }
 
 function alert2() {
-    alert("The acknowledgement for the frame 3 is lost");
+    document.querySelector(".right").innerHTML="The acknowledgement for the frame 3 is lost";
 }
 
 function alert3() {
-    alert("The packet 6 is lost, so no acknowledgement received");
+    document.querySelector(".right").innerHTML="The packet 6 is lost, so no acknowledgement received";
 }
 
 function alert4() {
-    alert("All the 10 packets were sent !!!")
+    document.querySelector(".right").innerHTML="All the 10 packets were sent !!!";
 }
 
 // function disbale_button(){
@@ -590,7 +590,7 @@ function draw() {
             }
             if (a1 == 400) {
                 arr = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0];
-                alert('negative ack for frame 2 recieved. Select the next frame to be sent');
+                document.querySelector(".right").innerHTML="negative ack for frame 2 recieved. Select the next frame to be sent";
                 stroke(0);
             }
 
@@ -621,7 +621,7 @@ function draw() {
             }
             if (x2 == 900) {
                     arr = [0, 0, 0, 0, 0, 0, 1, 0, 0, 0];
-                    alert("ack for frame 3 recieved select the next frame");
+                    document.querySelector(".right").innerHTML="ack for frame 3 recieved select the next frame";
                     stroke(0);
                 }
 
@@ -654,7 +654,7 @@ function draw() {
             
         if (a3 == 400) {
                 arr = [0, 0, 0, 1, 0, 0, 0, 0, 0, 0];
-                alert("negative ack for frame 4 recieved select the next frame");
+                document.querySelector(".right").innerHTML="negative ack for frame 4 recieved select the next frame";
                 stroke(0);
             }
         
@@ -722,7 +722,7 @@ function draw() {
             }
             if (a5 == 400) {
                 arr = [0, 0, 0, 0, 0, 1, 0, 0, 0, 0];
-                alert("ack for frame 6 lost, select the next frame");
+                document.querySelector(".right").innerHTML="ack for frame 6 lost, select the next frame";
                 stroke(0);
             }
         }
@@ -760,7 +760,7 @@ function draw() {
             }
         if (x6 == 900) {
             arr = [0, 0, 0, 0, 0, 0, 0, 0, 1, 1];
-           alert("ack for frame 2,7,4 receved. Select the next frames");
+            document.querySelector(".right").innerHTML="ack for frame 2,7,4 receved. Select the next frames";
            stroke(0);
         }
     }
@@ -793,7 +793,7 @@ function draw() {
 
         if (a7 == 400) {
             arr = [0, 0, 0, 0, 0, 0, 0, 1, 0, 0];
-            alert("Negative ack for frame 8 lost. Select next frame to be sent")
+            document.querySelector(".right").innerHTML="Negative ack for frame 8 lost. Select next frame to be sent";
             stroke(0);
         }
 
@@ -839,7 +839,7 @@ function draw() {
                 }
                 if (a8_1 == 400) {
                     arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                    alert("ack for all frames recieved");
+                    document.querySelector(".right").innerHTML="ack for all frames recieved";
                     stroke(0);
                     }
                 

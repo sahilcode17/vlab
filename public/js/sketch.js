@@ -100,7 +100,7 @@ function setup() {
 };
 
 function wrongclick() {
-    alert("Wrong frame selected");
+  document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 

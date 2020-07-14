@@ -92,7 +92,7 @@ function setup() {
 
 
 }
-alert("select the first 4 frames to be sent");
+document.querySelector(".right").innerHTML="select the first 4 frames to be sent";
 function overwrite() {
     button1.disabled = true;
     button2.disabled = true;
@@ -136,7 +136,7 @@ function yellowch() {
 }
 
 function wrongclick() {
-    alert("Wrong frame selected");
+    document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 
@@ -293,7 +293,7 @@ function f10() {
 };
 
 function alert1() {
-    alert("Select the next frame to be sent");
+    document.querySelector(".right").innerHTML="Select the next frame to be sent";
 }
 
 cnt1 = 0;
@@ -487,7 +487,7 @@ function draw() {
             }
             if (a1 == 400) {
                 arr = [0, 1, 0, 0, 0, 0, 0, 0, 0, 0];
-                alert("Negative ACK recieved select the next frame");
+                document.querySelector(".right").innerHTML="Negative ACK recieved select the next frame";
             }
 
 
@@ -522,7 +522,7 @@ function draw() {
             }
             if (a3 == 400) {
                 arr = [0, 0, 1, 0, 0, 0, 0, 0, 0, 0];
-                alert("ack 3 lost, select the next frame")
+                document.querySelector(".right").innerHTML="ack 3 lost, select the next frame";
             }
         }
 
@@ -585,7 +585,7 @@ function draw() {
 
             if (a2 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
-                alert("Select the next 4 frames");
+                document.querySelector(".right").innerHTML="Select the next 4 frames";
             }
         }
     }
@@ -614,7 +614,7 @@ function draw() {
                 // alert("select next frame");
                 if (a5 == 400) {
                     arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                    alert("10 frames sent!!!");
+                    document.querySelector(".right").innerHTML="10 frames sent!!!";
                 }
             }
 

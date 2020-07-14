@@ -1,6 +1,6 @@
 var myv;
 function mymove() {
-    alert("frame sent")
+    document.querySelector(".right").innerHTML="frame sent"
     myMove1()
     
     myv=setTimeout(myMove2,1000)
@@ -9,7 +9,7 @@ function mymove() {
 }
 
 function myMove2() {
-    alert("ack sent")
+    document.querySelector(".right").innerHTML="ack sent";
     var elem = document.getElementById("animate"); 
     
 

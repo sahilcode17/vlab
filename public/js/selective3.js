@@ -112,7 +112,7 @@ function setup() {
 };
 
 function wrongclick() {
-    alert("Wrong frame selected");
+    document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 function overwrite() {
@@ -314,31 +314,31 @@ function f10() {
 };
 
 function alert00() {
-    alert("Select the correct first three frames to be sent");
+    document.querySelector(".right").innerHTML="Select the correct first three frames to be sent";
 }
 
 function alert0() {
-    alert("Select the correct three frames to be sent");
+    document.querySelector(".right").innerHTML="Select the correct three frames to be sent";
 }
 
 function alert1() {
-    alert("Select the next frame to be sent");
+    document.querySelector(".right").innerHTML="Select the next frame to be sent";
 }
 
 function alert2() {
-    alert("The acknowledgement for the frame 2 is lost");
+    document.querySelector(".right").innerHTML="The acknowledgement for the frame 2 is lost";
 }
 
 function alert3() {
-    alert("Select the frame to be resent");
+    document.querySelector(".right").innerHTML="Select the frame to be resent";
 }
 
 function alert4() {
-    alert("Negative Acknowledgement For 4 is received ")
+    document.querySelector(".right").innerHTML="Negative Acknowledgement For 4 is received ";
 }
 
 function alert5() {
-    alert("The frame 8 is lost");
+    document.querySelector(".right").innerHTML="The frame 8 is lost";
 }
 
 // function disbale_button(){
@@ -814,7 +814,7 @@ function draw() {
             }
             if (a8 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-                alert("All 10 sent!!!");
+                document.querySelector(".right").innerHTML="All 10 sent!!!";
             }
 
 

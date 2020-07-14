@@ -101,7 +101,7 @@ function setup() {
 };
 
 function wrongclick() {
-    alert("Wrong frame selected");
+    document.querySelector(".right").innerHTML="Wrong frame selected";
 }
 
 function overwrite() {
@@ -304,27 +304,27 @@ function f10() {
 };
 
 function alert00() {
-    alert("Select the correct first five frames to be sent");
+    document.querySelector(".right").innerHTML="Select the correct first five frames to be sent";
 }
 
 function alert0() {
-    alert("Select the correct five frames to be sent");
+    document.querySelector(".right").innerHTML="Select the correct five frames to be sent";
 }
 
 function alert1() {
-    alert("Select the next frame to be sent");
+    document.querySelector(".right").innerHTML="Select the next frame to be sent";
 }
 
 function alert2() {
-    alert("The acknowledgement for the frame 3 is lost");
+    document.querySelector(".right").innerHTML="The acknowledgement for the frame 3 is lost";
 }
 
 function alert3() {
-    alert("The packet 6 is lost, so no acknowledgement received");
+    document.querySelector(".right").innerHTML="The packet 6 is lost, so no acknowledgement received";
 }
 
 function alert4() {
-    alert("All the 10 packets were sent !!!")
+    document.querySelector(".right").innerHTML="All the 10 packets were sent !!!";
 }
 
 // function disbale_button(){
