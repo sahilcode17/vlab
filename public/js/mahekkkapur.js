@@ -294,7 +294,7 @@ function f5() {
 // };
 
 function alert1() {
-    alert("Select the next frame to be sent");
+    document.querySelector(".right").innerHTML="Select the next frame to be sent..."
 }
 
 cnt1 = 0;
@@ -344,7 +344,8 @@ function texts(){
     stroke(400);
     strokeWeight(4);
 }
-alert("select the first frame to be sent");
+
+document.querySelector(".right").innerHTML="select the first frame to be sent..."
 
 function draw() {
     background(400);
@@ -412,7 +413,9 @@ function draw() {
             // alert("select next frame");
             if (a == 400) {
                 arr = [0, 1,0,0,0];
-                alert("ACK 1 received, select the next frame to be sent");
+               
+                document.querySelector(".right").innerHTML="ACK 1 received, select the next frame to be sent.."
+                
             }
         }
     }}
@@ -451,7 +454,9 @@ function draw() {
             }         
             if (a1 == 600) {
                 arr = [0, 1,0,0,0];
-                alert("A2 Stopped in between, Select the next frame");
+              
+                document.querySelector(".right").innerHTML="A2 Stopped in between, Select the next frame.."
+                
             }
         }
     }}
@@ -489,7 +494,9 @@ function draw() {
             // alert("select next frame");
             if (a2 == 400) {
                 arr = [0, 0,1,0,0];
-                alert("ACK 2 received, select the next frame to be sent");
+               
+                document.querySelector(".right").innerHTML="ACK 2 received, select the next frame to be sent"
+
             }
         }
     }
@@ -528,7 +535,8 @@ function draw() {
             // alert("select next frame");
             if (a3 == 400) {
                 arr = [0, 0,0,1,0];
-                alert("ACK 3 received, select the next frame to be sent");
+               
+                document.querySelector(".right").innerHTML="ACK 3 received, select the next frame to be sent"
             }
         }
     }
@@ -550,7 +558,9 @@ function draw() {
             text('4', xx+7.5, yy+15);
             if (x4 == 600) {
                 arr = [0, 0,0,1,0];
-                alert("Frame 4 got lost, which frame will be sent next?");
+                
+                document.querySelector(".right").innerHTML="Frame 4 got lost, which frame will be sent next?"
+
             }
         }     
     }
@@ -589,7 +599,8 @@ function draw() {
             // alert("select next frame");
             if (a5 == 400) {
                 arr = [0, 0,0,0,1];
-                alert("ACK 4 received, select the next frame to be sent");
+              
+                document.querySelector(".right").innerHTML="ACK 4 received, select the next frame to be sent"
             }
         }
         }}
@@ -628,7 +639,8 @@ function draw() {
                 // alert("select next frame");
                 if (a6 == 400) {
                     arr = [0, 0,0,0,0];
-                    alert("ACK 5 received, ALL FRAMES SENT!");
+                    
+                    document.querySelector(".right").innerHTML="ACK 5 received, ALL FRAMES SENT!"
                 }
             }
             }}
