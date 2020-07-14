@@ -22,15 +22,26 @@
   .right{
     position: absolute;
     top:35%;
-    right: 17%;
+    right: 6%;
     font-weight:normal; 
     font-size: 1.3rem;
     border: 0.3rem outset rgb(188, 191, 194);
+   animation: mymove 2s  cubic-bezier(1,0,0,0)  infinite ;
+   animation-delay: 1s;
     
   }
+  @keyframes mymove {
+  from {top: 9%; background-color: red; display: none;}
+  to {rght: 11%; background-color: yellow; display: block;}
+}
+
+
 </style>
 <body>
-    <p class="right"></p>
+  <div class="right" > 
+    <p ></p>
+  </div>
+    
     <!-- Example single danger button -->
   <a href="../index.html"><button id= "topcorner"  type="button" class="btn btn-outline-success">Home</button></a>
   
