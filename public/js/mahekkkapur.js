@@ -46,22 +46,22 @@ function setup() {
     button2 = createButton('2');
     button2.style('font-size', '17px');
     button2.style('background-color', 'yellow');
-    button2.position(30, 19);
+    button2.position(35, 19);
     button2.mousePressed(f2);
     button3 = createButton('3');
     button3.style('font-size', '17px');
     button3.style('background-color', 'yellow');
-    button3.position(50, 19);
+    button3.position(60, 19);
     button3.mousePressed(f3);
     button4 = createButton('4');
     button4.style('font-size', '17px');
     button4.style('background-color', 'yellow');
-    button4.position(70, 19);
+    button4.position(85, 19);
     button4.mousePressed(f4);
     button5 = createButton('5');
     button5.style('font-size', '17px');
     button5.style('background-color', 'yellow');
-    button5.position(90, 19);
+    button5.position(110, 19);
     button5.mousePressed(f5);
     //button6 = createButton('6');
     // button6.style('font-size', '17px');
@@ -330,8 +330,8 @@ function lines(){
 
 function texts(){
     fill(0);
-    text('Reciever', 740, 640);
-    text('Sender', 405, 640);
+    text('Reciever', 740, 550);
+    text('Sender', 405, 550);
 //     text('1', 380, 15);
 //    text('5', 780, 215);
    
@@ -385,6 +385,7 @@ function draw() {
             x = x + X; //400  1
             y = y + Y; //0    0.1
             if (x <= 1000) {
+                text('1', 380, 15);
                 line(x, y, 400, 0);
                 if(x<=770){xx=x; yy=y;}
                 else{xx=770; yy=185;}
@@ -398,6 +399,7 @@ function draw() {
         if (x >= 950) {
             stroke(255, 204, 0);
             if (a >= 400) {
+                text('A1', 780, 230);
                 a = a + A;
                 b = b + B;
                 line(a, b, 800, 200);
@@ -427,6 +429,7 @@ function draw() {
             x1 = x1 + X; //400  1
             y1 = y1 + Y; //0    0.1
             if (x1 <= 1000) {
+                text('2', 380, 15);
                 line(x1, y1, 400, 0);
                 if(x1<=770){xx=x1; yy=y1;}
                 else{xx=770; yy=185;}
@@ -443,6 +446,7 @@ function draw() {
                 a1 = a1 + A;
                 b1 = b1 + B;}
             if(cnt3!=1){
+                text('A2', 780, 230);
                 line(a1, b1, 800, 200);
                 if(a1>=630){aa=a1-30; bb=b1;}
                 else{aa=600; bb=282.5;}
@@ -466,6 +470,7 @@ function draw() {
             x2 = x2 + X; //400  1
             y2 = y2 + Y; //0    0.1
             if (x2 <= 1000) {
+                text('2', 380, 15);
                 line(x2, y2, 400, 0);
                 if(x2<=770){xx=x2; yy=y2;}
                 else{xx=770; yy=185;}
@@ -479,6 +484,7 @@ function draw() {
         if (x2 >= 950) {
             stroke(255, 204, 0);
             if (a2 >= 400) {
+                text('A2', 780, 230);
                 a2 = a2 + A;
                 b2 = b2 + B;
                 line(a2, b2, 800, 200);
@@ -507,6 +513,7 @@ function draw() {
             x3 = x3 + X; //400  1
             y3 = y3 + Y; //0    0.1
             if (x3 <= 1000) {
+                text('3', 380, 15);
                 line(x3, y3, 400, 0);
                 if(x3<=770){xx=x3; yy=y3;}
                 else{xx=770; yy=185;}
@@ -520,6 +527,7 @@ function draw() {
         if (x3 >= 950) {
             stroke(255, 204, 0);
             if (a3 >= 400) {
+                text('A3', 780, 230);
                 a3 = a3 + A;
                 b3 = b3 + B;
                 line(a3, b3, 800, 200);
@@ -547,7 +555,7 @@ function draw() {
         if (x4 <= 600) {
             x4 = x4 + X; //400  1
             y4 = y4 + Y;} //0    0.1
-            
+            text('4', 380, 15); 
             line(x4, y4, 400, 0);
             if(x4<=570){xx=x4; yy=y4;}
             else{xx=570; yy=85;}
@@ -571,6 +579,7 @@ function draw() {
             x5 = x5 + X; //400  1
             y5 = y5 + Y; //0    0.1
             if (x5 <= 1000) {
+                text('4', 380, 15); 
                 line(x5, y5, 400, 0);
                 if(x5<=770){xx=x5; yy=y5;}
                 else{xx=770; yy=185;}
@@ -586,6 +595,7 @@ function draw() {
             if (a5 >= 400) {
                 a5 = a5 + A;
                 b5 = b5 + B;
+                text('A4', 780, 230);
                 line(a5, b5, 800, 200);
                 if(a5>=430){aa=a5-30; bb=b5;}
                 else{aa=400; bb=382.5;}
@@ -611,6 +621,7 @@ function draw() {
                 x6 = x6 + X; //400  1
                 y6 = y6 + Y; //0    0.1
                 if (x6 <= 1000) {
+                    text('5', 380, 15); 
                     line(x6, y6, 400, 0);
                     if(x6<=770){xx=x6; yy=y6;}
                     else{xx=770; yy=185;}
@@ -626,6 +637,7 @@ function draw() {
                 if (a6 >= 400) {
                     a6 = a6 + A;
                     b6 = b6 + B;
+                    text('A5', 780, 230);
                     line(a6, b6, 800, 200);
                     if(a6>=430){aa=a6-30; bb=b6;}
                     else{aa=400; bb=382.5;}
