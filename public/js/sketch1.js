@@ -92,7 +92,7 @@ function setup() {
 }
 
 function overwrite() {
-    document.querySelector(".right").innerHTML = "";
+    document.querySelector(".right").style.display = "none";
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
@@ -136,6 +136,7 @@ function yellowch() {
 
 
 function wrongclick() {
+    document.querySelector(".right").style.display = "block";
     document.querySelector(".right").innerHTML = "Wrong frame selected";
 }
 
@@ -147,9 +148,10 @@ function f1() {
         wrongclick();
         button1.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[0] == 2) {} else {
         button1.style('background-color', 'green');
         count += 1;
+        arr[0] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -163,9 +165,10 @@ function f2() {
         wrongclick();
         button2.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[1] == 2) {} else {
         button2.style('background-color', 'green');
         count += 1;
+        arr[1] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -177,9 +180,10 @@ function f3() {
         wrongclick();
         button3.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[2] == 2) {} else {
         button3.style('background-color', 'green');
         count += 1;
+        arr[2] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -191,9 +195,10 @@ function f4() {
         wrongclick();
         button4.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[3] == 2) {} else {
         button4.style('background-color', 'green');
         count += 1;
+        arr[3] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -206,9 +211,10 @@ function f5() {
         wrongclick();
         button5.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[4] == 2) {} else {
         button5.style('background-color', 'green');
         count += 1;
+        arr[4] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -221,9 +227,10 @@ function f6() {
         wrongclick();
         button6.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[5] == 2) {} else {
         button6.style('background-color', 'green');
         count += 1;
+        arr[5] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -236,9 +243,10 @@ function f7() {
         wrongclick();
         button7.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[6] == 2) {} else {
         button7.style('background-color', 'green');
         count += 1;
+        arr[6] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -251,9 +259,10 @@ function f8() {
         wrongclick();
         button8.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[7] == 2) {} else {
         button8.style('background-color', 'green');
         count += 1;
+        arr[7] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -266,9 +275,10 @@ function f9() {
         wrongclick();
         button9.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[8] == 2) {} else {
         button9.style('background-color', 'green');
         count += 1;
+        arr[8] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -282,9 +292,10 @@ function f10() {
         wrongclick();
         button10.style('background-color', 'red');
         flag = 0;
-    } else {
+    } else if (arr[9] == 2) {} else {
         button10.style('background-color', 'green');
         count += 1;
+        arr[9] = 2;
         if ((count == 4) || (count == 5) || (count == 6) || (count == 10) || (count == 14) || (count == 18)) {
             overwrite();
         }
@@ -293,6 +304,7 @@ function f10() {
 };
 
 function alert1() {
+    document.querySelector(".right").style.display = "block";
     document.querySelector(".right").innerHTML = "Select the next frame to be sent";
 }
 
@@ -362,6 +374,7 @@ function texts() {
     stroke(0);
     strokeWeight(4);
 }
+document.querySelector(".right").style.display = "block";
 document.querySelector(".right").innerHTML = "select the first 4 frames to be sent";
 
 function draw() {
@@ -494,6 +507,7 @@ function draw() {
         }
         if (x2 == 800) {
             arr = [0, 0, 1, 1, 1, 1, 0, 0, 0, 0];
+            document.querySelector(".right").style.display = "block";
             document.querySelector(".right").innerHTML = "The packet 3 is lost, Select the next frames to be sent";
 
 
@@ -530,6 +544,7 @@ function draw() {
             // alert("select next frame");
             if (a3 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
+                document.querySelector(".right").style.display = "block";
                 document.querySelector(".right").innerHTML = "select the next frames to be sent";
             }
         }
@@ -571,6 +586,7 @@ function draw() {
             // alert("select next frame");
             if (a4 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1];
+                document.querySelector(".right").style.display = "block";
                 document.querySelector(".right").innerHTML = "ack 7 lost, select the next frames";
             }
         }
@@ -602,6 +618,7 @@ function draw() {
             // alert("select next frame");
             if (a5 == 400) {
                 arr = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+                document.querySelector(".right").style.display = "block";
                 document.querySelector(".right").innerHTML = "10 frames sent!!!";
             }
         }
