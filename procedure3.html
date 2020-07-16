@@ -17,11 +17,19 @@
             font-weight: bold;
             font-size: 1.2rem;
         }
+        li{
+            list-style-type:upper-roman;
+        }
+        button{
+            position:absolute;
+            top: 4%;
+            right: 4%;
+        }
     </style>
     
     <div class="container">
        <p> Procedure for Selective Repeat ARQ</p>
-<ul>
+<ol>
     <li>The aim is to introduce the students to the working of the Selective Repeat ARQ and how this algorithm behaves under the situations such as Acknowledgement Lost, Frame Lost, Corrupted Frame and Negative Acknowledgment.</li>
     <li>Once one selects the Selective Repeat ARQ, then they are required to choose the frame size for which the simulation is desired.</li>
     <li>For the respective frame size, the simulation begins with an array representing the frames in the left of the screen and the instructions prompted in the right side of the screen.</li>
@@ -29,7 +37,8 @@
     <li>If the user fails to select the correct frames at any point of simulation , the “Wrong Frame Selected” is prompted on the right side of the screen and until the user successfully selects the correct frames , the simulation does not proceed and the User is given as many retries as needed.</li>
     <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
     <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
-</ul>
+</ol>
     </div>
+    <a href="procedure.html"><button class="btn btn-outline-primary"> Go Back</button></a>
 </body>
 </html>
