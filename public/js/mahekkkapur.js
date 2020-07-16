@@ -94,6 +94,7 @@ function setup() {
 
 function overwrite() {
     document.querySelector(".right").innerHTML = "";
+    document.querySelector(".right").
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
