@@ -30,21 +30,45 @@
         box-shadow: 8px 8px 5px grey;
         border: 0.3rem outset rgb(188, 191, 194);
     }
-    .container{
-            border: 1px solid silver;
-            margin-top: 7%;
-            width: 40%;
-            position: absolute;
-            top: 40%;
-            right: 5%;
-        }
-        .container p{
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
+    
         li{
             list-style-type:upper-roman;
         }
+        #btn{
+            position: absolute;
+        top: 10px;
+        right: 6%; 
+        }
+        .block{
+            display: none;
+        }
+        .sidebar{
+  position: fixed;
+  transform: translateX(-30rem);
+  width: 30rem;
+  background-color: #f0f0f0;
+  height: 100%;
+}
+.sidebar.open{
+  transform: translateX(216%);
+}
+.sidebar-close-button{
+  
+ width: 2rem;
+ height: 2.2rem;
+  padding: .1rem;
+  padding-top: 0%;
+  font-size: 1.5rem;
+  border: 0.1rem solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: .5rem;
+  top: 0.2rem;
+  
+}
+
+
 </style>
 
 <body>
@@ -54,8 +78,10 @@
 
     <!-- Example single danger button -->
     <a href="../index.html"><button id= "topcorner"  type="button" class="btn btn-outline-success">Home</button></a>
-    <div class="container">
+    <button id= "btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Procedure</button>
+    <div class="sidebar">
         <p>Procedure for Stop and Wait ARQ</p>
+        <button class="sidebar-close-button" onclick="closeMenu()">X</button>
 <ol>
     
     <li>The aim is to introduce the students to the working of the Stop and Wait ARQ and how it behaves under the situations such as Frame Lost or Acknowledgement lost.</li>
@@ -69,6 +95,14 @@
     </div>
 
     <script src="./js/Stop_And_Wait.js"></script>
+    <script>
+         function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open")
+    }
+    </script>
 
     <!-- <script src="sketch.js"></script> -->
 
