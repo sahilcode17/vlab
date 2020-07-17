@@ -6,6 +6,7 @@
     <script src="./js/p5.sound.min.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/sim.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="utf-8">
 
@@ -56,15 +57,15 @@
   
  width: 2rem;
  height: 2.2rem;
-  padding: .1rem;
-  padding-top: 0%;
+  
+  
   font-size: 1.5rem;
-  border: 0.1rem solid black;
-  border-radius: 50%;
+ 
+  border: none;
   cursor: pointer;
   position: absolute;
-  right: .5rem;
-  top: 0.2rem;
+  right: 0%;
+  top: 0%;
   
 }
 
@@ -81,7 +82,7 @@
     <button id= "btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Procedure</button>
     <div class="sidebar">
         <p>Procedure for Stop and Wait ARQ</p>
-        <button class="sidebar-close-button" onclick="closeMenu()">X</button>
+        <button class="sidebar-close-button" onclick="closeMenu()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
 <ol>
     
     <li>The aim is to introduce the students to the working of the Stop and Wait ARQ and how it behaves under the situations such as Frame Lost or Acknowledgement lost.</li>
