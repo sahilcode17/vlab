@@ -23,13 +23,28 @@
     
     .right {
         position: absolute;
-        top: 35%;
+        top: 20%;
         right: 6%;
         font-weight: normal;
         font-size: 1rem;
         box-shadow: 8px 8px 5px grey;
         border: 0.3rem outset rgb(188, 191, 194);
     }
+    .container{
+            border: 1px solid silver;
+            margin-top: 7%;
+            width: 40%;
+            position: absolute;
+            top: 40%;
+            right: 5%;
+        }
+        .container p{
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        li{
+            list-style-type:upper-roman;
+        }
 </style>
 
 <body>
@@ -39,6 +54,19 @@
 
     <!-- Example single danger button -->
     <a href="../index.html"><button id= "topcorner"  type="button" class="btn btn-outline-success">Home</button></a>
+    <div class="container">
+        <p>Procedure for Stop and Wait ARQ</p>
+<ol>
+    
+    <li>The aim is to introduce the students to the working of the Stop and Wait ARQ and how it behaves under the situations such as Frame Lost or Acknowledgement lost.</li>
+    <li>Once one selects the Stop-and-Wait ARQ, then they are redirected to the simulation page</li>
+    <li>Since Stop and Wait ARQ does not follow sliding window protocol, ONLY ONE frame should be selected at a time to move ahead with the simulation</li>
+    <li>The user needs to make the right selections in the array for the simulation to run further.</li>
+    <li>If the user fails to select the correct frame at any point of simulation , the “Wrong Frame Selected” is prompted on the right side of the screen and until the user successfully selects the correct frame , the simulation does not proceed and the User is given as many retries as needed.</li>
+    <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
+    <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
+</ol>
+    </div>
 
     <script src="./js/Stop_And_Wait.js"></script>
 

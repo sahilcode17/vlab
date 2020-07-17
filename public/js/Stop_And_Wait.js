@@ -93,12 +93,7 @@ function setup() {
 }
 
 function overwrite() {
-<<<<<<< HEAD:public/js/mahekkkapur.js
-    document.querySelector(".right").innerHTML = "";
-    document.querySelector(".right").
-=======
     document.querySelector(".right").style.display = "none";
->>>>>>> 3e0c0973ed5a99c392b03f0fb559da6262e51ad7:public/js/Stop_And_Wait.js
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled = true;
