@@ -538,11 +538,22 @@ function draw() {
                     text('A2', aa, bb + 15);
                 }
                 fill(400)
+<<<<<<< Updated upstream:public/js/Stop_And_Wait.js
                     // alert("select next frame");
                 if (a2 == 400) {
                     arr = [0, 0, 1, 0, 0];
                     document.querySelector(".right").style.display = "block";
                     document.querySelector(".right").innerHTML = "ACK 2 received, select the next frame to be sent"
+=======
+                textSize(15);
+                text('A2', aa, bb+15);
+            }
+            fill(400)
+            // alert("select next frame");
+            if (a2 == 400) {
+                arr = [0, 0,1,0,0];
+                document.querySelector(".right").innerHTML="ACK 2 received, select the next frame to be sent"
+>>>>>>> Stashed changes:public/js/mahekkkapur.js
 
                 }
             }
