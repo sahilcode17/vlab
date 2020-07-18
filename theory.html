@@ -1,99 +1,149 @@
-<!doctype html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-
-    <title>Virtual Labs</title>
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/dashboard/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="/docs/4.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
-    <!-- Favicons -->
-
-    <meta name="msapplication-config" content="/docs/4.5/assets/img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#563d7c">
-
-
-    <style>
-        .bd-placeholder-img {
-            font-size: 1.125rem;
-            text-anchor: middle;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-        }
-        
-        @media (min-width: 768px) {
-            .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-            }
-        }
-    </style>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Virtual Labs </title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="bootstrap2.css">
+    <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
+    <link rel="stylesheet" href="min.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-        <a class="navbar-brand col-md-3 col-lg-2 mr-0 px-3" href="#">Vlabs</a>
-        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-toggle="collapse" data-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<body class="hold-transition skin-blue sidebar-mini">
+    <!--Navigation Bar-->
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
 
-    </nav>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">LABS</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">GITLAB</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="main-header">
+            <!-- Logo -->
+            <a href="../explist.php" class="logo">
+                <p align="center" style="font-size:1em;"><b>Computer Networks<!-- Write your lab name --></b></p>
+            </a>
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
 
-    <div class="container-fluid">
-        <div class="row" style="height: 100%;">
-            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-                <div class="sidebar-sticky pt-3">
-                    <ul class="nav flex-column">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="index.html">
-                                <span data-feather="home"></span> Aim <span class="sr-only">(current)</span>
-                            </a>
+                </a>
+                <section class="content-header">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="#"><i class="fa fa-dashboard"></i>Computer Networks<!-- Write your lab name --></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="theory.html">
-                                <span data-feather="file"></span> Theory
-                            </a>
+                        <li>
+                            <a href="#">FLOW CONTROL PROTOCOLS<!-- Write your experiment name --></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pretest.html">
-                                <span data-feather="shopping-cart"></span> Pre-Test
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="procedure.html">
-                                <span data-feather="users"></span> Procedure
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="simulation.html">
-                                <span data-feather="bar-chart-2"></span> Simulation
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="posttest.html">
-                                <span data-feather="layers"></span> Post-Test
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="reference.html">
-                              <span data-feather="layers"></span>
-                              References
-                            </a>
-                          </li>
-                    </ul>
-                </div>
+                        <li class="active">Aim</li>
+                    </ol>
+                </section>
             </nav>
+        </header>
 
-            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group"></div>
+                </form>
+                <!-- /.sear ch form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="active treeview">
+                        <a href="index.html">
+                            <i class="fa fa-files-o"></i> <span>Aim</span>
+
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-files-o"></i>
+                            <span>Theory</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="pretest.html">
+                            <i class="fa fa-files-o"></i> <span>Pre Test</span>
+
+                        </a>
+                    </li>
+
+                    <li class="treeview">
+                        <a href="procedure.html">
+                            <i class="fa fa-files-o"></i> <span>Procedure</span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="simulation.html">
+                            <i class="fa fa-laptop"></i>
+                            <span>Simulation</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+
+
+                    <li class="treeview">
+                        <a href="posttest.html">
+                            <i class="fa fa-files-o"></i>
+                            <span>Post Test</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
+                        <a href="reference.html">
+                            <i class="fa fa-files-o"></i>
+                            <span>References</span>
+                            <span class="pull-right-container">
+                        </span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            <section class="content-header">
+                <h1 align="center">
+                    FLOW CONTROL PROTOCOLS
+                </h1>
+            </section>
+            <!-- Main content -->
+            <section class="content">
                 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                     <h1 class="h2">Flow Control</h1>
 
@@ -164,13 +214,18 @@
 
                     </ul>
                 </div>
-            </main>
+            </section>
+            <!-- /.content -->
         </div>
+        <!-- /.content-wrapper -->
+        <footer class="main-footer">
+            <h4 align="center"><a href="https://www.bennett.edu.in/"> Computer Science & Engineering Department, Bennett University, Greater Noida, UP </a></h4>
+        </footer>
+        <!-- /.control-sidebar -->
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
+</body>
 
 </html>
+
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
