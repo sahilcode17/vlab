@@ -18,7 +18,15 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        color: #2C99CE ;
+    
     }
+    #topcorner:hover , .right:hover , .title:hover{
+        color: #77BB41;
+    }
+    
+    
+    
     
     .right {
         position: absolute;
@@ -28,6 +36,7 @@
         font-size: 1rem;
         box-shadow: 8px 8px 5px grey;
         border: 0.3rem outset rgb(188, 191, 194);
+        color:  #2C99CE;
     }
     
         li{
@@ -37,6 +46,7 @@
             position: absolute;
         top: 15%;
         right: 6%; 
+        
         }
         .block{
             display: none;
@@ -87,6 +97,7 @@ canvas {
 }
 .title{
     text-align: right;
+    color:  #2C99CE;
 }
 .footer{
     position: fixed;
@@ -100,6 +111,13 @@ canvas {
 #fs{
     left: 580%;
     top: 50%;
+}
+a{
+    text-decoration: none !important;
+    color: #2C99CE;
+}
+a:hover{
+    color: #77BB41;
 }
 @media screen and (max-width: 1280px) {
  #btn{
@@ -132,17 +150,16 @@ canvas {
     <div class="right">
         <p></p>
     </div>
-    <div>
-<img src="http://ems-iitr.vlabs.ac.in/electrical-machines-(simulation)/exp/speed-control-slip-ring/assets/images/logo-new.png" alt="Vlabimg">
-    </div>
+    <a href="../index.html"> <img src="http://ems-iitr.vlabs.ac.in/electrical-machines-(simulation)/exp/speed-control-slip-ring/assets/images/logo-new.png" alt="Vlabimg"></a>
+</div>
 
-    <!-- Example single danger button -->
-   <h3 id="topcorner">Flow Control</h3>
-   <div class="header-line">
-   </div>
-   <div class="title">
-    <h3>Stop and Protocol</h3>
-   </div>
+<!-- Example single danger button -->
+<h3 id="topcorner">Flow Control</h3>
+<div class="header-line">
+</div>
+<div class="title">
+<h3>Stop and Wait ARQ</h3>
+</div>
    
     <button id= "btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Instruction Tab</button>
     <div class="sidebar">
