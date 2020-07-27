@@ -12,9 +12,7 @@
 
 </head>
 <style>
-    #align {
-        margin-left: 60%;
-    }
+   
     
     #topcorner {
         position: absolute;
@@ -24,19 +22,20 @@
     
     .right {
         position: absolute;
-        top: 35%;
-        right: 5%;
+        top: 30%;
+        right: 6%;
         font-weight: normal;
         font-size: 1rem;
         box-shadow: 8px 8px 5px grey;
         border: 0.3rem outset rgb(188, 191, 194);
     }
-    li{
+    
+        li{
             list-style-type:upper-roman;
         }
         #btn{
             position: absolute;
-        top: 10px;
+        top: 12.5%;
         right: 6%; 
         }
         .block{
@@ -45,12 +44,10 @@
         .sidebar{
   position: fixed;
   transform: translateX(-30rem);
-  width: 30rem;
+  width: 30.4rem;
   background-color: #f0f0f0;
   height: 100%;
-  padding-right: 1%;
-  left: 1.1%;
-  top: -0.2%;
+  margin-right: 1%;
 }
 .sidebar.open{
   transform: translateX(182.5%);
@@ -70,13 +67,60 @@
   top: 0%;
   
 }
+canvas {
+    
+    margin-left: 4%;
+    
+ margin-bottom: 40%;
+    padding:5%;
+    border: 1px solid black;
+}
+
+.header-line{
+    margin-top: 2%;
+    background:  #ff6600;
+    border: 4px solid  #ff6600;
+    width:362%;
+    height: 10%;
+}
+.title{
+    text-align: right;
+}
+.footer{
+    position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+#fs{
+    left: 580%;
+    top: 50%;
+}
+
 </style>
 
 <body>
     <p class="right"></p>
+    <div>
+        <img src="http://ems-iitr.vlabs.ac.in/electrical-machines-(simulation)/exp/speed-control-slip-ring/assets/images/logo-new.png" alt="Vlabimg">
+            </div>
+        
+            <!-- Example single danger button -->
+           <h3 id="topcorner">Flow Control</h3>
+           <div class="header-line">
+           </div>
+           <div class="title">
+            <h3>Stop and Protocol</h3>
+           </div>
+           
+            <button id= "btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Instruction Tab</button>
+
     <!-- Example single danger button -->
     <div id="align" class="btn-group">
-        <button type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button type="button" id="fs" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Frame Size
     </button>
         <div class="dropdown-menu">
@@ -86,10 +130,9 @@
 
         </div>
     </div>
-    <a href="../index.html"><button id= "topcorner"  type="button" class="btn btn-outline-success">Home</button></a>
+   
 
-
-    <button id= "btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Procedure</button>
+  
     <div class="sidebar">
         <p>Procedure for Go-Back-N ARQ</p>
         <button class="sidebar-close-button" onclick="closeMenu()"><i class="fa fa-window-close" aria-hidden="true"></i></button>
@@ -103,6 +146,9 @@
     <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
     <li>An index is provided to the left of the screen to allow the user to understand which color signifies what behaviour.</li>
 </ol>
+    </div>
+    <div class="footer">
+        <P>Copyrights Virtual lab IIT Roorkee</P>
     </div>
 
 
