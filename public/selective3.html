@@ -17,7 +17,15 @@
         position: absolute;
         top: 10px;
         right: 10px;
+        color: #2C99CE ;
+    
     }
+    #topcorner:hover , .right:hover{
+        color: #77BB41;
+    }
+    
+    
+    
     
     .right {
         position: absolute;
@@ -27,6 +35,7 @@
         font-size: 1rem;
         box-shadow: 8px 8px 5px grey;
         border: 0.3rem outset rgb(188, 191, 194);
+        color:  #2C99CE;
     }
     
         li{
@@ -34,8 +43,9 @@
         }
         #btn{
             position: absolute;
-        top: 13%;
+        top: 15%;
         right: 6%; 
+        
         }
         .block{
             display: none;
@@ -50,7 +60,7 @@
   
 }
 .sidebar.open{
-  transform: translateX(212.5%);
+  transform: translateX(187.5%);
  
 }
 .sidebar-close-button{
@@ -81,11 +91,12 @@ canvas {
     margin-top: 2%;
     background:  #ff6600;
     border: 4px solid  #ff6600;
-    width:362%;
+    width:361%;
     height: 10%;
 }
 .title{
     text-align: right;
+    color:  #2C99CE;
 }
 .footer{
     position: fixed;
@@ -99,6 +110,13 @@ canvas {
 #fs{
     left: 580%;
     top: 50%;
+}
+a{
+    text-decoration: none !important;
+    color: #2C99CE;
+}
+a:hover{
+    color: #77BB41;
 }
 @media screen and (max-width: 1280px) {
  #btn{
@@ -123,33 +141,27 @@ canvas {
 }
 }
 
+
+
 </style>
 
 <body>
     <p class="right"></p>
     <div>
-        <img src="http://ems-iitr.vlabs.ac.in/electrical-machines-(simulation)/exp/speed-control-slip-ring/assets/images/logo-new.png" alt="Vlabimg">
-            </div>
-        
-            <!-- Example single danger button -->
-           <h3 id="topcorner">Flow Control</h3>
-           <div class="header-line">
-           </div>
-           <div class="title">
-            <h3>Stop and Protocol</h3>
+        <a href="../index.html"> <img src="http://ems-iitr.vlabs.ac.in/electrical-machines-(simulation)/exp/speed-control-slip-ring/assets/images/logo-new.png" alt="Vlabimg"></a>
+    </div>
+
+    <!-- Example single danger button -->
+   <h3 id="topcorner">Flow Control</h3>
+   <div class="header-line">
+   </div>
+   <div class="title">
+   <a href="selective_r.html"><h3>Select-Repeat ARQ</h3></a> 
            </div>
            
             <button id= "btn" onclick="openMenu()" type="button" class="btn btn-outline-success">Instruction Tab</button>
     <div  class="btn-group">
-        <button id="fs" type="button" class="btn btn-outline-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Frame Size
-        </button>
-        <div class="dropdown-menu">
-            <a class="dropdown-item" href="selective3.html">3</a>
-            <a class="dropdown-item" href="selective4.html">4</a>
-            <a class="dropdown-item" href="sr_5_mk.html">5</a>
-
-        </div>
+       
     </div>
     
     <div class="sidebar">
