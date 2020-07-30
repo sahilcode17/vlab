@@ -48,51 +48,61 @@ function setup() {
     button1 = createButton('1');
     button1.style('font-size', '17px');
     button1.style('background-color', 'yellow');
+    button1.style("position", "fixed")
     button1.position(20, 180);
     button1.mousePressed(f1);
     button2 = createButton('2');
     button2.style('font-size', '17px');
     button2.style('background-color', 'yellow');
+    button2.style("position", "fixed")
     button2.position(40, 180);
     button2.mousePressed(f2);
     button3 = createButton('3');
     button3.style('font-size', '17px');
     button3.style('background-color', 'yellow');
+    button3.style("position", "fixed")
     button3.position(60, 180);
     button3.mousePressed(f3);
     button4 = createButton('4');
     button4.style('font-size', '17px');
     button4.style('background-color', 'yellow');
+    button4.style("position", "fixed")
     button4.position(80, 180);
     button4.mousePressed(f4);
     button5 = createButton('5');
     button5.style('font-size', '17px');
     button5.style('background-color', 'yellow');
+    button5.style("position", "fixed")
     button5.position(100, 180);
     button5.mousePressed(f5);
     button6 = createButton('6');
     button6.style('font-size', '17px');
     button6.style('background-color', 'yellow');
+    button6.style("position", "fixed")
     button6.position(120, 180);
     button6.mousePressed(f6);
     button7 = createButton('7');
     button7.style('font-size', '17px');
     button7.style('background-color', 'yellow');
+    button7.style("position", "fixed")
     button7.position(140, 180);
     button7.mousePressed(f7);
     button8 = createButton('8');
     button8.style('font-size', '17px');
     button8.style('background-color', 'yellow');
+    button8.style("position", "fixed")
     button8.position(160, 180);
     button8.mousePressed(f8);
     button9 = createButton('9');
     button9.style('font-size', '17px');
     button9.style('background-color', 'yellow');
+    button9.style("position", "fixed")
     button9.position(180, 180);
     button9.mousePressed(f9);
     button10 = createButton('10');
     button10.style('font-size', '17px');
     button10.style('background-color', 'yellow');
+    button10.style("position", "fixed")
     button10.position(200, 180);
     button10.mousePressed(f10);
 
